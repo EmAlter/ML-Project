@@ -1,0 +1,7 @@
+site_name: Progetto Machine Learning
+nav:
+  - Home: index.md
+  - Attività: activity.md
+theme: material
+extra_css:
+  - stylesheets/extra.css

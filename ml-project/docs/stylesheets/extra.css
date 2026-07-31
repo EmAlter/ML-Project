@@ -1,0 +1,59 @@
+:root {
+  --tip-bg: #ffffff;
+  --tip-border: rgba(0, 0, 0, 0.15);
+}
+[data-md-color-scheme="slate"] {
+  --tip-bg: #2e303e;
+  --tip-border: rgba(255, 255, 255, 0.15);
+}
+
+.term {
+  position: relative;
+  border-bottom: 1px dotted var(--md-accent-fg-color);
+  color: var(--md-accent-fg-color);
+  cursor: help;
+}
+
+.term .tip {
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 8px);
+  transform: translateX(-50%) translateY(4px);
+  width: 240px;
+  background-color: var(--tip-bg);
+  border: 1px solid var(--tip-border);
+  border-radius: 6px;
+  padding: 10px 12px;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+  /* ritardo SOLO in chiusura: dà tempo di raggiungere il box col mouse */
+  transition: opacity 0.15s ease 0.15s, transform 0.15s ease 0.15s;
+}
+
+.term:hover .tip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;   /* riattiva i click SOLO quando è visibile */
+  transition-delay: 0s;   /* ma la comparsa resta immediata */
+}
+
+.tip-title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 0 0 4px;
+}
+
+.tip-body {
+  font-size: 0.75rem;
+  color: var(--md-default-fg-color--light);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.tip a {
+  color: var(--md-accent-fg-color);
+  text-decoration: underline;
+}
