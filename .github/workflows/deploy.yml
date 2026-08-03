@@ -16,5 +16,5 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: 3.x
-      - run: pip install mkdocs-material # Aggiungi qui eventuali altri plugin se li usi
+      - run: pip install mkdocs-material mkdocs-callouts # Installa tema e plugin usati in mkdocs.yml
       - run: mkdocs gh-deploy --force
