@@ -3,5 +3,6 @@ Per comprendere meglio i riferimenti tra i concetti astratti del progetto svilup
 ### Gestione delle Attività
 | Progetto | Moodle | 
 | ----------- | ----------- |
-| [[Raccolta di Attività]] | Deposito delle domande |
-| [[Attività]] | Domande |
+| [Raccolta di Attività](activity_collection.md) | Deposito delle domande |
+| [Attività](activity.md) | Categoria |
+| [Domanda](question.md) | Domanda |

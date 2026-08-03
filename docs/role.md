@@ -1,15 +1,7 @@
-Gli attori sono entità che interagiscono con il sistema per raggiungere un obiettivo specifico.
+Il ruolo è un insieme di autorizzazioni che definiscono le azioni che un utente può o non può fare all'interno del sistema.
 
-Nel contesto del progetto, gli attori principali sono:
-
-* **Progettista**: è l'attore che ha il compito di gestire le sperimentazioni, i corsi e le attività, oltre a occuparsi della gestione degli utenti e dei loro ruoli. Il progettista ha accesso a tutte le funzionalità del sistema.
-* **Moderatore**: è l'attore che ha il compito di moderare i test dettando il tempo e leggendo le consegne delle attività, oltre a gestire eventuali dati dei testati.
-* **Testato**: è l'attore che partecipa ai test.
-* **Esperto**: è l'attore che ha il compito di presentare un'intervento tra un test e l'altro, fornendo spiegazioni o chiarimenti sulle attività svolte.
-
-## Gli attori in Moodle
-In Moodle, attori differenti vengono riconosciuti tramite il concetto di ==Ruolo==, che definisce le azioni che un utente può compiere all'interno del sistema.
-Per questo motivo per ogni utente deve essere definito un ruolo corrispondente in Moodle, con le relative autorizzazioni.
+## Moodle
+Il concetto di **ruolo** in Moodle è identico a quello del progetto astratto.
 
 > [!IMPORTANTE]
 > Il **Progettista** in Moodle è rappresentato dal ruolo di **Amministratore**, che viene generato e assegnato automaticamente al momento dell'installazione del sistema, quindi non è necessario creare un nuovo ruolo per esso.
@@ -17,7 +9,7 @@ Per questo motivo per ogni utente deve essere definito un ruolo corrispondente i
 ### Creare un nuovo ruolo in Moodle
 Per creare un nuovo ruolo in Moodle è necessario rispettare alcune precondizioni:
 
-* L'utente deve avere il ruolo di **Progettista (Amministratore)**, in quanto solo i progettisti hanno accesso alla gestione dei ruoli.
+* L'utente deve avere il ruolo di **Progettista (Amministratore) :material-account-hard-hat:** , in quanto solo i progettisti hanno accesso alla gestione dei ruoli.
 * Nel sistema devono esistere una serie di autorizzazioni assegnabili (in Moodle sono definite come **Permessi**), che rappresentano le azioni che un utente può compiere all'interno del sistema. Queste autorizzazioni sono già presenti in Moodle, quindi non è necessario crearne di nuove.
 
 Di seguito i passi per creare un nuovo ruolo in Moodle:
@@ -46,5 +38,19 @@ Per modificare o eliminare un ruolo in Moodle il procedimento è molto semplice,
 
 A questo punto:
 
-* **MODIFICARE**: Cliccare sull'icona della matita <img src="../assets/icons/edit.svg" alt="Modifica" width="10"> a fianco a ruolo desiderato, modificare gli attributi e/o le autorizzazioni e cliccare su "Salva modifiche"
-* **ELIMINARE**: Cliccare sull'icona del cestino <img src="../assets/icons/delete.svg" alt="Elimina" width="10"> a fianco a ruolo desiderato e confermare l'eliminazione del ruolo.
+* **MODIFICARE**: Cliccare sull'icona della matita <img src="../assets/icons/edit.svg" alt="Modifica" width="10"> a fianco al ruolo desiderato, modificare gli attributi e/o le autorizzazioni e cliccare su "Salva modifiche"
+* **ELIMINARE**: Cliccare sull'icona del cestino <img src="../assets/icons/delete.svg" alt="Elimina" width="10"> a fianco al ruolo desiderato e confermare l'eliminazione del ruolo.
+
+### Assegnare o rimuovere un ruolo a un utente in Moodle
+Per assegnare o rimuovere un ruolo a un utente in Moodle è necessario rispettare alcune precondizioni:
+
+* L'utente deve avere il ruolo di **Progettista (Amministratore) :material-account-hard-hat:** , in quanto solo i progettisti hanno accesso alla gestione dei ruoli.
+* L'utente a cui si vuole assegnare il ruolo deve essere già registrato nel sistema, in quanto non è possibile assegnare un ruolo a un utente non esistente.
+
+Di seguito i passi per assegnare o rimuovere un ruolo a un utente in Moodle:
+
+1. Accedere alla Home page di Moodle
+1. Cliccare su "Amministrazione del sito" nel menù centrale
+1. Nel menù orizzontale scegliere "Utenti" > "Autorizzazioni" > "Ruoli globali"
+1. Nella pagina che si apre, cliccare sul ruolo desiderato, si aprirà una nuova pagina con due colonne, a destra gli utenti disponibili e a sinistra gli utenti assegnati al ruolo.
+1. Per assegnare il ruolo a un utente, selezionarlo nella colonna di destra e cliccare su "Aggiungi", in questo modo l'utente selezionato passerà nella colonna di sinistra e avrà il ruolo assegnato (per rimuoverlo basta selezionarlo nella colonna di sinistra e cliccare su "Rimuovi").
