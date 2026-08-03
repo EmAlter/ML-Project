@@ -2,6 +2,8 @@
 
 Benvenuto/a nella wiki del progetto di Machine Learning dell'Università degli Studi di Torino!
 
+  <img src="../assets/images/logoUnito.png" alt="Logo">
+
 ## Commands
 
 * `mkdocs new [dir-name]` - Create a new project.

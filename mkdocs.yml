@@ -1,7 +1,48 @@
 site_name: Progetto Machine Learning
 nav:
   - Home: index.md
-  - Attività: activity.md
-theme: material
+  - Mapping dei Nomi: mapping.md
+  - Gestire le Attività:
+    - Attività: activity.md
+    - Raccolta di Attività: activity-collection.md
+    - Domande e Risposte: questions_and_responses.md
+  - Attori: actors.md
+plugins:
+  - search
+  - callouts
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.mark
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 extra_css:
   - stylesheets/extra.css
+theme:
+  name: material
+  language: it
+  palette:
+    - scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Passa alla modalità scura
+    - scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Passa alla modalità chiara
+  features:
+    - navigation.tabs
+    - navigation.top
+    - content.code.copy
+  icon:
+    admonition:
+      esempio: material/flask-outline
