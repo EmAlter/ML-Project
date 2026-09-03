@@ -1,6 +1,9 @@
 site_name: Progetto Machine Learning
+repo_url: https://github.com/EmAlter/ML-Project
+repo_name: emalter/ML-Project
 nav:
   - Home: index.md
+  - Tesi: thesis.md
   - Mapping dei Nomi: mapping.md
   - Attore: actor.md
   - Diagramma Interattivo: diagram.md
@@ -69,8 +72,10 @@ theme:
   features:
     - navigation.tabs
     - navigation.top
+    - navigation.path
     - content.code.copy
     - content.tooltips
+  
   icon:
-    admonition:
-      esempio: material/flask-outline
+    repo: 
+      fontawesome/brands/github
