@@ -3,21 +3,34 @@ nav:
   - Home: index.md
   - Mapping dei Nomi: mapping.md
   - Attore: actor.md
-  - Gestire le Attività:
-    - Attività: activity.md
-    - Raccolta di Attività: activity-collection.md
-    - Domande e Risposte: questions_and_responses.md
-  - Gestire i Ruoli:
-    - Ruolo: role.md
-  - Gestire gli Utenti:
-    - Utente: user.md
+  - Diagramma Interattivo: diagram.md
+  - Casi d'Uso:
+    - Gestire le Sperimentazioni:
+      - Sperimentazione: experiment.md
+      - Corso: course.md
+      - Test: test.md
+    - Gestire le Attività:
+      - Attività: activity.md
+      - Raccolta di Attività: activity_collection.md
+      - Domande e Risposte: questions_and_responses.md
+    - Gestire i Ruoli:
+      - Ruolo: role.md
+    - Gestire gli Utenti:
+      - Utente: user.md
+    - Gestire le Classi:
+      - Classe: class.md
+  - Preparazione del Sistema:
+    - Codice iniettato e Plugins: plugin.md
+    - Tablet: tablet.md
 plugins:
   - search
   - callouts
 markdown_extensions:
+  - abbr
   - admonition
   - attr_list
   - md_in_html
+  - tables
   - pymdownx.details
   - pymdownx.mark
   - pymdownx.tasklist:
@@ -25,6 +38,16 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+
 extra_css:
   - stylesheets/extra.css
 theme:
@@ -47,6 +70,7 @@ theme:
     - navigation.tabs
     - navigation.top
     - content.code.copy
+    - content.tooltips
   icon:
     admonition:
       esempio: material/flask-outline

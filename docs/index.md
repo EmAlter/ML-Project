@@ -2,7 +2,9 @@
 
 Benvenuto/a nella wiki del progetto di Machine Learning dell'Università degli Studi di Torino!
 
-  <img src="../docs/assets/images/logoUnito.png" alt="Logo">
+  <img src="../assets/images/logoUnito.png" alt="Logo">
+
+L'obiettivo di questo progetto è quello di sviluppare una soluzione digitale per la gestione e la rappresentazione di sperimentazioni
 
 ## Commands
 

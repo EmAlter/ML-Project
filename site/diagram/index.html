@@ -1,0 +1,1954 @@
+
+<!doctype html>
+<html lang="it" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../actor/">
+      
+      
+        <link rel="next" href="../experiment/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Diagramma Interattivo - Progetto Machine Learning</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+  
+  
+    
+      
+      
+    
+  
+  
+  <style>:root{--md-admonition-icon--esempio:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M5%2019a1%201%200%200%200%201%201h12a1%201%200%200%200%201-1c0-.21-.07-.41-.18-.57L13%208.35V4h-2v4.35L5.18%2018.43c-.11.16-.18.36-.18.57m1%203a3%203%200%200%201-3-3c0-.6.18-1.16.5-1.63L9%207.81V6a1%201%200%200%201-1-1V4a2%202%200%200%201%202-2h4a2%202%200%200%201%202%202v1a1%201%200%200%201-1%201v1.81l5.5%209.56c.32.47.5%201.03.5%201.63a3%203%200%200%201-3%203zm7-6%201.34-1.34L16.27%2018H7.73l2.66-4.61zm-.5-4a.5.5%200%200%201%20.5.5.5.5%200%200%201-.5.5.5.5%200%200%201-.5-.5.5.5%200%200%201%20.5-.5%22/%3E%3C/svg%3E');}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Intestazione">
+    <a href=".." title="Progetto Machine Learning" class="md-header__button md-logo" aria-label="Progetto Machine Learning" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Progetto Machine Learning
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Diagramma Interattivo
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Passa alla modalità scura"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Passa alla modalità scura" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Passa alla modalità chiara"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Passa alla modalità chiara" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cerca">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Cancella" aria-label="Cancella" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inizializza la ricerca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../mapping/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Mapping dei Nomi
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../actor/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Attore
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Diagramma Interattivo
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../experiment/" class="md-tabs__link">
+          
+  
+  
+  Casi d'Uso
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../plugin/" class="md-tabs__link">
+          
+  
+  
+  Elementi Aggiuntivi
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigazione" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Progetto Machine Learning" class="md-nav__button md-logo" aria-label="Progetto Machine Learning" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Progetto Machine Learning
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mapping dei Nomi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../actor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Attore
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Diagramma Interattivo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Casi d'Uso
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Casi d'Uso
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestire le Sperimentazioni
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Gestire le Sperimentazioni
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../experiment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sperimentazione
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestire le Attività
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Gestire le Attività
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../activity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Attività
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../activity_collection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Raccolta di Attività
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../questions_and_responses/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Domande e Risposte
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestire i Ruoli
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Gestire i Ruoli
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../role/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ruolo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestire gli Utenti
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Gestire gli Utenti
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Utente
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_5" id="__nav_5_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestire le Classi
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Gestire le Classi
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Classe
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Elementi Aggiuntivi
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Elementi Aggiuntivi
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Codice iniettato e Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tablet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tablet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Diagramma Interattivo</h1>
+
+<style>
+/* CSS per l'interattività dell'SVG */
+.uml-class { cursor: pointer; transition: all 0.3s ease; }
+.uml-link { transition: all 0.3s ease; stroke-width: 2px; }
+
+.dimmed { opacity: 0.15 !important; }
+.highlighted { stroke: #007acc !important; stroke-width: 4px !important; }
+.highlighted-linked { opacity: 1 !important; stroke: #4caf50 !important; }
+
+/* Stile della Legenda */
+.diagram-legend {
+    position: absolute; 
+    top: 15px; 
+    right: 15px;
+    background: rgba(255, 255, 255, 0.95); 
+    border: 1px solid #ccc;
+    padding: 15px; 
+    border-radius: 8px; 
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+</style>
+
+<div style="position: relative; border: 1px solid #ccc; height: 600px; overflow: hidden; background: #fafafa; border-radius: 8px;">
+
+    <div class="diagram-legend">
+        <h4 style="margin-top: 0;">Legenda Interattiva</h4>
+        <div style="margin-bottom: 5px;"><span style="color: #007acc; font-size: 1.2rem;">■</span> Classe selezionata</div>
+        <div style="margin-bottom: 15px;"><span style="color: #4caf50; font-size: 1.2rem;">■</span> Entità collegate</div>
+        <button id="reset-diagram" class="md-button md-button--primary">Reset Vista</button>
+    </div>
+
+    <!-- Iniezione diretta dell'SVG tramite Snippet MkDocs -->
+    <div id="svg-container" style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
+        <svg xmlns="http://www.w3.org/2000/svg" fill-opacity="1" color-rendering="auto" color-interpolation="auto" text-rendering="auto" stroke="black" stroke-linecap="square" width="2220" stroke-miterlimit="10" shape-rendering="auto" stroke-opacity="1" fill="black" stroke-dasharray="none" font-weight="normal" stroke-width="1" viewBox="1240 180 2220 2130" height="2130" font-family="'Dialog'" font-style="normal" stroke-linejoin="miter" font-size="12px" stroke-dashoffset="0" image-rendering="auto">
+          <defs id="genericDefs" />
+          <g>
+            <defs id="defs1">
+              <clipPath clipPathUnits="userSpaceOnUse" id="clipPath1">
+                <path d="M0 0 L2147483647 0 L2147483647 2147483647 L0 2147483647 L0 0 Z" />
+              </clipPath>
+              <clipPath clipPathUnits="userSpaceOnUse" id="clipPath2">
+                <path d="M0 0 L0 130 L160 130 L160 0 Z" />
+              </clipPath>
+              <clipPath clipPathUnits="userSpaceOnUse" id="clipPath3">
+                <path d="M0 0 L0 920 L1890 920 L1890 0 Z" />
+              </clipPath>
+              <clipPath clipPathUnits="userSpaceOnUse" id="clipPath4">
+                <path d="M0 0 L0 200 L180 200 L180 0 Z" />
+              </clipPath>
+              <clipPath clipPathUnits="userSpaceOnUse" id="clipPath5">
+                <path d="M0 0 L0 1510 L1200 1510 L1200 0 Z" />
+              </clipPath>
+              <clipPath clipPathUnits="userSpaceOnUse" id="clipPath6">
+                <path d="M0 0 L0 1020 L1770 1020 L1770 0 Z" />
+              </clipPath>
+              <clipPath clipPathUnits="userSpaceOnUse" id="clipPath7">
+                <path d="M0 0 L0 700 L1070 700 L1070 0 Z" />
+              </clipPath>
+              <clipPath clipPathUnits="userSpaceOnUse" id="clipPath8">
+                <path d="M0 0 L0 460 L310 460 L310 0 Z" />
+              </clipPath>
+              <clipPath clipPathUnits="userSpaceOnUse" id="clipPath9">
+                <path d="M0 0 L0 150 L140 150 L140 0 Z" />
+              </clipPath>
+              <clipPath clipPathUnits="userSpaceOnUse" id="clipPath10">
+                <path d="M0 0 L0 50 L190 50 L190 0 Z" />
+              </clipPath>
+              <clipPath clipPathUnits="userSpaceOnUse" id="clipPath11">
+                <path d="M0 0 L0 550 L100 550 L100 0 Z" />
+              </clipPath>
+              <clipPath clipPathUnits="userSpaceOnUse" id="clipPath12">
+                <path d="M0 0 L0 580 L360 580 L360 0 Z" />
+              </clipPath>
+              <clipPath clipPathUnits="userSpaceOnUse" id="clipPath13">
+                <path d="M0 0 L0 50 L220 50 L220 0 Z" />
+              </clipPath>
+              <clipPath clipPathUnits="userSpaceOnUse" id="clipPath14">
+                <path d="M0 0 L0 320 L220 320 L220 0 Z" />
+              </clipPath>
+              <clipPath clipPathUnits="userSpaceOnUse" id="clipPath15">
+                <path d="M0 0 L0 80 L480 80 L480 0 Z" />
+              </clipPath>
+              <clipPath clipPathUnits="userSpaceOnUse" id="clipPath16">
+                <path d="M0 0 L0 150 L30 150 L30 0 Z" />
+              </clipPath>
+              <clipPath clipPathUnits="userSpaceOnUse" id="clipPath17">
+                <path d="M0 0 L0 190 L490 190 L490 0 Z" />
+              </clipPath>
+              <clipPath clipPathUnits="userSpaceOnUse" id="clipPath18">
+                <path d="M0 0 L0 170 L30 170 L30 0 Z" />
+              </clipPath>
+              <clipPath clipPathUnits="userSpaceOnUse" id="clipPath19">
+                <path d="M0 0 L0 150 L310 150 L310 0 Z" />
+              </clipPath>
+              <clipPath clipPathUnits="userSpaceOnUse" id="clipPath20">
+                <path d="M0 0 L0 50 L490 50 L490 0 Z" />
+              </clipPath>
+              <clipPath clipPathUnits="userSpaceOnUse" id="clipPath21">
+                <path d="M0 0 L0 540 L180 540 L180 0 Z" />
+              </clipPath>
+              <clipPath clipPathUnits="userSpaceOnUse" id="clipPath22">
+                <path d="M0 0 L0 770 L460 770 L460 0 Z" />
+              </clipPath>
+              <clipPath clipPathUnits="userSpaceOnUse" id="clipPath23">
+                <path d="M0 0 L0 280 L100 280 L100 0 Z" />
+              </clipPath>
+              <clipPath clipPathUnits="userSpaceOnUse" id="clipPath24">
+                <path d="M0 0 L0 280 L80 280 L80 0 Z" />
+              </clipPath>
+              <clipPath clipPathUnits="userSpaceOnUse" id="clipPath25">
+                <path d="M0 0 L0 110 L100 110 L100 0 Z" />
+              </clipPath>
+              <clipPath clipPathUnits="userSpaceOnUse" id="clipPath26">
+                <path d="M0 0 L0 180 L640 180 L640 0 Z" />
+              </clipPath>
+              <clipPath clipPathUnits="userSpaceOnUse" id="clipPath27">
+                <path d="M0 0 L0 130 L140 130 L140 0 Z" />
+              </clipPath>
+              <clipPath clipPathUnits="userSpaceOnUse" id="clipPath28">
+                <path d="M0 0 L0 130 L30 130 L30 0 Z" />
+              </clipPath>
+              <clipPath clipPathUnits="userSpaceOnUse" id="clipPath29">
+                <path d="M0 0 L0 280 L90 280 L90 0 Z" />
+              </clipPath>
+              <clipPath clipPathUnits="userSpaceOnUse" id="clipPath30">
+                <path d="M0 0 L0 50 L510 50 L510 0 Z" />
+              </clipPath>
+              <clipPath clipPathUnits="userSpaceOnUse" id="clipPath31">
+                <path d="M0 0 L0 80 L30 80 L30 0 Z" />
+              </clipPath>
+              <clipPath clipPathUnits="userSpaceOnUse" id="clipPath32">
+                <path d="M0 0 L0 80 L720 80 L720 0 Z" />
+              </clipPath>
+              <clipPath clipPathUnits="userSpaceOnUse" id="clipPath33">
+                <path d="M0 0 L0 140 L30 140 L30 0 Z" />
+              </clipPath>
+              <clipPath clipPathUnits="userSpaceOnUse" id="clipPath34">
+                <path d="M0 0 L0 30 L30 30 L30 0 Z" />
+              </clipPath>
+              <clipPath clipPathUnits="userSpaceOnUse" id="clipPath35">
+                <path d="M0 0 L0 50 L120 50 L120 0 Z" />
+              </clipPath>
+              <clipPath clipPathUnits="userSpaceOnUse" id="clipPath36">
+                <path d="M0 0 L0 420 L500 420 L500 0 Z" />
+              </clipPath>
+              <clipPath clipPathUnits="userSpaceOnUse" id="clipPath37">
+                <path d="M0 0 L0 260 L100 260 L100 0 Z" />
+              </clipPath>
+              <clipPath clipPathUnits="userSpaceOnUse" id="clipPath38">
+                <path d="M0 0 L0 50 L180 50 L180 0 Z" />
+              </clipPath>
+              <clipPath clipPathUnits="userSpaceOnUse" id="clipPath39">
+                <path d="M0 0 L0 70 L330 70 L330 0 Z" />
+              </clipPath>
+            </defs>
+            <g fill="rgb(255,255,255)" fill-opacity="0" transform="translate(2630,410)" stroke-opacity="0" stroke="rgb(255,255,255)">
+              <rect x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" stroke="none" />
+            </g>
+            <g transform="translate(2630,410)" id="certificato" class="uml-class">
+              <rect fill="none" x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" />
+              <text x="48" font-size="14px" y="17.975" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve">Certificato</text>
+              <path fill="none" d="M1 23.975 L159 23.975" clip-path="url(#clipPath2)" />
+            </g>
+            <g fill="rgb(255,255,255)" fill-opacity="0" transform="translate(2770,1180)" stroke-opacity="0" stroke="rgb(255,255,255)">
+              <rect x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" stroke="none" />
+            </g>
+            <g transform="translate(2770,1180)" id="valutazione" class="uml-class">
+              <rect fill="none" x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" />
+              <text x="43" font-size="14px" y="17.975" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve">Valutazione</text>
+              <path fill="none" d="M1 23.975 L159 23.975" clip-path="url(#clipPath2)" />
+            </g>
+            <g fill="rgb(255,255,255)" fill-opacity="0" transform="translate(2760,1510)" stroke-opacity="0" stroke="rgb(255,255,255)">
+              <rect x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" stroke="none" />
+            </g>
+            <g transform="translate(2760,1510)" id="domanda" class="uml-class">
+              <rect fill="none" x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" />
+              <text x="49" font-size="14px" y="17.975" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve">Domanda</text>
+              <path fill="none" d="M1 23.975 L159 23.975" clip-path="url(#clipPath2)" />
+              <text x="5" font-size="14px" y="38.95" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve">Testo: testo</text>
+            </g>
+            <g fill="rgb(255,255,255)" fill-opacity="0" transform="translate(2760,1760)" stroke-opacity="0" stroke="rgb(255,255,255)">
+              <rect x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" stroke="none" />
+            </g>
+            <g transform="translate(2760,1760)" id="risposta" class="uml-class">
+              <rect fill="none" x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" />
+              <text x="52" font-size="14px" y="17.975" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve">Risposta</text>
+              <path fill="none" d="M1 23.975 L159 23.975" clip-path="url(#clipPath2)" />
+              <text x="5" font-size="14px" y="38.95" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve">Testo: testo</text>
+            </g>
+            <g fill="rgb(255,255,255)" fill-opacity="0" transform="translate(2440,2160)" stroke-opacity="0" stroke="rgb(255,255,255)">
+              <rect x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" stroke="none" />
+            </g>
+            <g transform="translate(2440,2160)" id="raccolta-di-attività" class="uml-class">
+              <rect fill="none" x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" />
+              <text x="22" font-size="14px" y="17.975" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve">Raccolta di Attività</text>
+              <path fill="none" d="M1 23.975 L159 23.975" clip-path="url(#clipPath2)" />
+            </g>
+            <g fill="rgb(255,255,255)" fill-opacity="0" transform="translate(2040,1960)" stroke-opacity="0" stroke="rgb(255,255,255)">
+              <rect x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" stroke="none" />
+            </g>
+            <g transform="translate(2040,1960)" id="amos" class="uml-class">
+              <rect fill="none" x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" />
+              <text x="59" font-size="14px" y="17.975" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve">AMOS</text>
+              <path fill="none" d="M1 23.975 L159 23.975" clip-path="url(#clipPath2)" />
+            </g>
+            <g fill="rgb(255,255,255)" fill-opacity="0" transform="translate(1600,1960)" stroke-opacity="0" stroke="rgb(255,255,255)">
+              <rect x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" stroke="none" />
+            </g>
+            <g transform="translate(1600,1960)" id="ml" class="uml-class">
+              <rect fill="none" x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" />
+              <text x="70" font-size="14px" y="17.975" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve">ML</text>
+              <path fill="none" d="M1 23.975 L159 23.975" clip-path="url(#clipPath2)" />
+            </g>
+            <g fill="rgb(255,255,255)" fill-opacity="0" transform="translate(1820,1960)" stroke-opacity="0" stroke="rgb(255,255,255)">
+              <rect x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" stroke="none" />
+            </g>
+            <g transform="translate(1820,1960)" id="ams" class="uml-class">
+              <rect fill="none" x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" />
+              <text x="64" font-size="14px" y="17.975" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve">AMS</text>
+              <path fill="none" d="M1 23.975 L159 23.975" clip-path="url(#clipPath2)" />
+            </g>
+            <g fill="rgb(255,255,255)" fill-opacity="0" transform="translate(1820,1710)" stroke-opacity="0" stroke="rgb(255,255,255)">
+              <rect x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" stroke="none" />
+            </g>
+            <g transform="translate(1820,1710)" id="test" class="uml-class">
+              <rect fill="none" x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" />
+              <text x="66" font-size="14px" y="17.975" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve">Test</text>
+              <path fill="none" d="M1 23.975 L159 23.975" clip-path="url(#clipPath2)" />
+            </g>
+            <g fill="rgb(255,255,255)" fill-opacity="0" transform="translate(1470,1700)" stroke-opacity="0" stroke="rgb(255,255,255)">
+              <rect x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" stroke="none" />
+            </g>
+            <g transform="translate(1470,1700)" id="corso-pre-post" class="uml-class">
+              <rect fill="none" x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" />
+              <text x="32" font-size="14px" y="17.975" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve">Corso Pre-Post</text>
+              <path fill="none" d="M1 23.975 L159 23.975" clip-path="url(#clipPath2)" />
+            </g>
+            <g fill="rgb(255,255,255)" fill-opacity="0" transform="translate(1470,1430)" stroke-opacity="0" stroke="rgb(255,255,255)">
+              <rect x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" stroke="none" />
+            </g>
+            <g transform="translate(1470,1430)" id="corso-con-test" class="uml-class">
+              <rect fill="none" x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" />
+              <text x="30" font-size="14px" y="17.975" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve">Corso Con Test</text>
+              <path fill="none" d="M1 23.975 L159 23.975" clip-path="url(#clipPath2)" />
+            </g>
+            <g fill="rgb(255,255,255)" fill-opacity="0" transform="translate(2440,1510)" stroke-opacity="0" stroke="rgb(255,255,255)">
+              <rect x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" stroke="none" />
+            </g>
+            <g transform="translate(2440,1510)" id="attività" class="uml-class">
+              <rect fill="none" x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" />
+              <text x="58" font-size="14px" y="17.975" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve">Attività</text>
+              <path fill="none" d="M1 23.975 L159 23.975" clip-path="url(#clipPath2)" />
+              <text x="5" font-size="14px" y="38.95" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve">Nome: testo</text>
+              <text x="5" font-size="14px" y="54.925" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve">Istruzioni: testo</text>
+              <text x="5" font-size="14px" y="70.9" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve">Tipo: testo</text>
+            </g>
+            <g fill="rgb(255,255,255)" fill-opacity="0" transform="translate(2150,1030)" stroke-opacity="0" stroke="rgb(255,255,255)">
+              <rect x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" stroke="none" />
+            </g>
+            <g transform="translate(2150,1030)" id="documento-di-test" class="uml-class">
+              <rect fill="none" x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" />
+              <text x="21" font-size="14px" y="17.975" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve">Documento di Test</text>
+              <path fill="none" d="M1 23.975 L159 23.975" clip-path="url(#clipPath2)" />
+            </g>
+            <g fill="rgb(255,255,255)" fill-opacity="0" transform="translate(1820,1470)" stroke-opacity="0" stroke="rgb(255,255,255)">
+              <rect x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" stroke="none" />
+            </g>
+            <g transform="translate(1820,1470)" id="intervento" class="uml-class">
+              <rect fill="none" x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" />
+              <text x="48" font-size="14px" y="17.975" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve">Intervento</text>
+              <path fill="none" d="M1 23.975 L159 23.975" clip-path="url(#clipPath2)" />
+            </g>
+            <g fill="rgb(255,255,255)" fill-opacity="0" transform="translate(1820,1240)" stroke-opacity="0" stroke="rgb(255,255,255)">
+              <rect x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" stroke="none" />
+            </g>
+            <g transform="translate(1820,1240)" id="corso" class="uml-class">
+              <rect fill="none" x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" />
+              <text x="61" font-size="14px" y="17.975" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve">Corso</text>
+              <path fill="none" d="M1 23.975 L159 23.975" clip-path="url(#clipPath2)" />
+            </g>
+            <g fill="rgb(255,255,255)" fill-opacity="0" transform="translate(1820,1030)" stroke-opacity="0" stroke="rgb(255,255,255)">
+              <rect x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" stroke="none" />
+            </g>
+            <g transform="translate(1820,1030)" id="sperimentazione" class="uml-class">
+              <rect fill="none" x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" />
+              <text x="27" font-size="14px" y="17.975" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve">Sperimentazione</text>
+              <path fill="none" d="M1 23.975 L159 23.975" clip-path="url(#clipPath2)" />
+              <text x="5" font-size="14px" y="38.95" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve">Nome: testo</text>
+              <text x="5" font-size="14px" y="54.925" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve">Anonima: (sì/no)</text>
+            </g>
+            <g fill="rgb(255,255,255)" fill-opacity="0" transform="translate(3120,650)" stroke-opacity="0" stroke="rgb(255,255,255)">
+              <rect x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" stroke="none" />
+            </g>
+            <g transform="translate(3120,650)" id="classe" class="uml-class">
+              <rect fill="none" x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" />
+              <text x="58" font-size="14px" y="17.975" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve">Classe</text>
+              <path fill="none" d="M1 23.975 L159 23.975" clip-path="url(#clipPath2)" />
+            </g>
+            <g fill="rgb(255,255,255)" fill-opacity="0" transform="translate(2490,1030)" stroke-opacity="0" stroke="rgb(255,255,255)">
+              <rect x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" stroke="none" />
+            </g>
+            <g transform="translate(2490,1030)" id="feedback" class="uml-class">
+              <rect fill="none" x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" />
+              <text x="49" font-size="14px" y="17.975" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve">Feedback</text>
+              <path fill="none" d="M1 23.975 L159 23.975" clip-path="url(#clipPath2)" />
+            </g>
+            <g fill="rgb(255,255,255)" fill-opacity="0" transform="translate(1820,410)" stroke-opacity="0" stroke="rgb(255,255,255)">
+              <rect x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" stroke="none" />
+            </g>
+            <g transform="translate(1820,410)" id="utente" class="uml-class">
+              <rect fill="none" x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" />
+              <text x="59" font-size="14px" y="17.975" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve">Utente</text>
+              <path fill="none" d="M1 23.975 L159 23.975" clip-path="url(#clipPath2)" />
+              <text x="5" font-size="14px" y="38.95" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve">Username: testo</text>
+              <text x="5" font-size="14px" y="54.925" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve">Nome:testo</text>
+              <text x="5" font-size="14px" y="70.9" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve">Cognome:testo</text>
+              <text x="5" font-size="14px" y="86.875" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve">Data di Nascita: testo</text>
+            </g>
+            <g fill="rgb(255,255,255)" fill-opacity="0" transform="translate(2380,410)" stroke-opacity="0" stroke="rgb(255,255,255)">
+              <rect x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" stroke="none" />
+            </g>
+            <g transform="translate(2380,410)" id="permesso" class="uml-class">
+              <rect fill="none" x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" />
+              <text x="48" font-size="14px" y="17.975" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve">Permesso</text>
+              <path fill="none" d="M1 23.975 L159 23.975" clip-path="url(#clipPath2)" />
+            </g>
+            <g fill="rgb(255,255,255)" fill-opacity="0" transform="translate(2070,410)" stroke-opacity="0" stroke="rgb(255,255,255)">
+              <rect x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" stroke="none" />
+            </g>
+            <g transform="translate(2070,410)" id="ruolo" class="uml-class">
+              <rect fill="none" x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" />
+              <text x="61" font-size="14px" y="17.975" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve">Ruolo</text>
+              <path fill="none" d="M1 23.975 L159 23.975" clip-path="url(#clipPath2)" />
+              <text x="5" font-size="14px" y="38.95" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve">Nome:testo</text>
+            </g>
+            <g fill="rgb(0,255,255)" fill-opacity="0.4902" transform="translate(2260,650)" stroke-opacity="0.4902" stroke="rgb(0,255,255)">
+              <rect x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" stroke="none" />
+            </g>
+            <g transform="translate(2260,650)" id="esperto" class="uml-class">
+              <rect fill="none" x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" />
+              <text x="55" font-size="14px" y="17.975" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve">Esperto</text>
+              <path fill="none" d="M1 23.975 L159 23.975" clip-path="url(#clipPath2)" />
+            </g>
+            <g fill="rgb(0,0,255)" fill-opacity="0.4902" transform="translate(1820,650)" stroke-opacity="0.4902" stroke="rgb(0,0,255)">
+              <rect x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" stroke="none" />
+            </g>
+            <g transform="translate(1820,650)" id="progettista" class="uml-class">
+              <rect fill="none" x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" />
+              <text x="46" font-size="14px" y="17.975" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve">Progettista</text>
+              <path fill="none" d="M1 23.975 L159 23.975" clip-path="url(#clipPath2)" />
+            </g>
+            <g fill="rgb(255,0,0)" fill-opacity="0.4902" transform="translate(2040,650)" stroke-opacity="0.4902" stroke="rgb(255,0,0)">
+              <rect x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" stroke="none" />
+            </g>
+            <g transform="translate(2040,650)" id="moderatore" class="uml-class">
+              <rect fill="none" x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" />
+              <text x="44" font-size="14px" y="17.975" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve">Moderatore</text>
+              <path fill="none" d="M1 23.975 L159 23.975" clip-path="url(#clipPath2)" />
+            </g>
+            <g fill="rgb(0,255,0)" fill-opacity="0.4902" transform="translate(2480,650)" stroke-opacity="0.4902" stroke="rgb(0,255,0)">
+              <rect x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" stroke="none" />
+            </g>
+            <g transform="translate(2480,650)" id="testato" class="uml-class">
+              <rect fill="none" x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" />
+              <text x="56" font-size="14px" y="17.975" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve">Testato</text>
+              <path fill="none" d="M1 23.975 L159 23.975" clip-path="url(#clipPath2)" />
+            </g>
+            <g fill="rgb(255,255,255)" fill-opacity="0" transform="translate(3280,920)" stroke-opacity="0" stroke="rgb(255,255,255)">
+              <rect x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" stroke="none" />
+            </g>
+            <g transform="translate(3280,920)" id="di-controllo" class="uml-class">
+              <rect fill="none" x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" />
+              <text x="43" font-size="14px" y="17.975" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve">Di Controllo</text>
+              <path fill="none" d="M1 23.975 L159 23.975" clip-path="url(#clipPath2)" />
+            </g>
+            <g fill="rgb(255,255,255)" fill-opacity="0" transform="translate(2980,920)" stroke-opacity="0" stroke="rgb(255,255,255)">
+              <rect x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" stroke="none" />
+            </g>
+            <g transform="translate(2980,920)" id="sperimentale" class="uml-class">
+              <rect fill="none" x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath2)" />
+              <text x="38" font-size="14px" y="17.975" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve">Sperimentale</text>
+              <path fill="none" d="M1 23.975 L159 23.975" clip-path="url(#clipPath2)" />
+            </g>
+            <g transform="translate(1350,200)">
+              <path fill="none" d="M470.5 890.5 L10.5 890.5" clip-path="url(#clipPath3)" class="uml-link" data-connects="sperimentazione classe" />
+              <path fill="none" d="M10.5 890.5 L10.5 20.5" clip-path="url(#clipPath3)" class="uml-link" data-connects="sperimentazione classe" />
+              <path fill="none" d="M10.5 20.5 L1850.5 20.5" clip-path="url(#clipPath3)" class="uml-link" data-connects="sperimentazione classe" />
+              <path fill="none" d="M1850.5 20.5 L1850.5 450.5" clip-path="url(#clipPath3)" class="uml-link" data-connects="sperimentazione classe" />
+              <text x="430.7812" font-size="14px" y="16" clip-path="url(#clipPath3)" font-family="sans-serif" stroke="none" xml:space="preserve">◄ viene inserita</text>
+              <text x="426.6484" font-size="14px" y="903.975" clip-path="url(#clipPath3)" font-family="sans-serif" stroke="none" xml:space="preserve">1..n</text>
+              <text x="1854" font-size="14px" y="434" clip-path="url(#clipPath3)" font-family="sans-serif" stroke="none" xml:space="preserve">1..n</text>
+            </g>
+            <g transform="translate(2630,530)">
+              <path fill="none" d="M80.5 10.5 L80.5 170.5" clip-path="url(#clipPath4)" class="uml-link" data-connects="certificato testato" />
+              <path fill="none" d="M80.5 170.5 L10.5 170.5" clip-path="url(#clipPath4)" class="uml-link" data-connects="certificato testato" />
+              <text x="84" font-size="14px" y="132.9875" clip-path="url(#clipPath4)" font-family="sans-serif" stroke="none" xml:space="preserve">fa parte di ►</text>
+              <text x="84" font-size="14px" y="38.975" clip-path="url(#clipPath4)" font-family="sans-serif" stroke="none" xml:space="preserve">0..n</text>
+              <text x="29" font-size="14px" y="183.975" clip-path="url(#clipPath4)" font-family="sans-serif" stroke="none" xml:space="preserve">1</text>
+            </g>
+            <g transform="translate(1260,750)">
+              <path fill="none" d="M1180.5 1480.5 L10.5 1480.5" clip-path="url(#clipPath5)" class="uml-link" data-connects="raccolta-di-attività progettista" />
+              <path fill="none" d="M10.5 1480.5 L10.5 10.5" clip-path="url(#clipPath5)" class="uml-link" data-connects="raccolta-di-attività progettista" />
+              <path fill="none" d="M10.5 10.5 L560.5 10.5" clip-path="url(#clipPath5)" class="uml-link" data-connects="raccolta-di-attività progettista" />
+              <text x="14" font-size="14px" y="1062.9875" clip-path="url(#clipPath5)" font-family="sans-serif" stroke="none" xml:space="preserve">gestisce ▼</text>
+              <text x="1136.6484" font-size="14px" y="1493.975" clip-path="url(#clipPath5)" font-family="sans-serif" stroke="none" xml:space="preserve">0..n</text>
+              <text x="516.6484" font-size="14px" y="23.975" clip-path="url(#clipPath5)" font-family="sans-serif" stroke="none" xml:space="preserve">1..n</text>
+            </g>
+            <g transform="translate(1350,1120)">
+              <path fill="none" d="M469.5 10.5 L10.5 10.5" clip-path="url(#clipPath6)" class="uml-link" data-connects="sperimentazione sperimentazione" />
+              <path fill="none" d="M10.5 10.5 L10.5 1000.5" clip-path="url(#clipPath6)" class="uml-link" data-connects="sperimentazione sperimentazione" />
+              <path fill="none" d="M10.5 1000.5 L1750.5 1000.5" clip-path="url(#clipPath6)" class="uml-link" data-connects="sperimentazione sperimentazione" />
+              <path fill="none" d="M1750.5 1000.5 L1750.5 100.5" clip-path="url(#clipPath6)" class="uml-link" data-connects="sperimentazione sperimentazione" />
+              <path fill="none" d="M1750.5 100.5 L1580.5 100.5" clip-path="url(#clipPath6)" class="uml-link" data-connects="sperimentazione sperimentazione" />
+              <path fill="white" d="M458.7417 4 L470 10.5 L458.7417 17 L447.9833 10.5 Z" clip-path="url(#clipPath6)" stroke="none" class="uml-link" data-connects="sperimentazione sperimentazione" />
+              <path fill="none" d="M458.7417 4 L470 10.5 L458.7417 17 L447.9833 10.5 Z" clip-path="url(#clipPath6)" class="uml-link" data-connects="sperimentazione sperimentazione" />
+              <text x="650.1123" font-size="14px" y="996" clip-path="url(#clipPath6)" font-family="sans-serif" stroke="none" xml:space="preserve">raggruppa ►</text>
+              <text x="442.2139" font-size="14px" y="23.975" clip-path="url(#clipPath6)" font-family="sans-serif" stroke="none" xml:space="preserve">1</text>
+              <text x="1599" font-size="14px" y="113.975" clip-path="url(#clipPath6)" font-family="sans-serif" stroke="none" xml:space="preserve">0..n</text>
+            </g>
+            <g transform="translate(1970,1270)">
+              <path fill="none" d="M960.5 10.5 L1050.5 10.5" clip-path="url(#clipPath7)" class="uml-link" data-connects="valutazione test" />
+              <path fill="none" d="M1050.5 10.5 L1050.5 680.5" clip-path="url(#clipPath7)" class="uml-link" data-connects="valutazione test" />
+              <path fill="none" d="M1050.5 680.5 L280.5 680.5" clip-path="url(#clipPath7)" class="uml-link" data-connects="valutazione test" />
+              <path fill="none" d="M280.5 680.5 L280.5 530.5" clip-path="url(#clipPath7)" class="uml-link" data-connects="valutazione test" />
+              <path fill="none" d="M280.5 530.5 L10.5 530.5" clip-path="url(#clipPath7)" class="uml-link" data-connects="valutazione test" />
+              <text x="801.7295" font-size="14px" y="676" clip-path="url(#clipPath7)" font-family="sans-serif" stroke="none" xml:space="preserve">produce ►</text>
+              <text x="979" font-size="14px" y="23.975" clip-path="url(#clipPath7)" font-family="sans-serif" stroke="none" xml:space="preserve">1..n</text>
+              <text x="29" font-size="14px" y="543.975" clip-path="url(#clipPath7)" font-family="sans-serif" stroke="none" xml:space="preserve">1</text>
+            </g>
+            <g transform="translate(2630,740)">
+              <path fill="none" d="M220.5 440.5 L220.5 10.5" clip-path="url(#clipPath8)" class="uml-link" data-connects="valutazione testato" />
+              <path fill="none" d="M220.5 10.5 L10.5 10.5" clip-path="url(#clipPath8)" class="uml-link" data-connects="valutazione testato" />
+              <text x="224" font-size="14px" y="127.9875" clip-path="url(#clipPath8)" font-family="sans-serif" stroke="none" xml:space="preserve">riferita a ▲</text>
+              <text x="224" font-size="14px" y="424" clip-path="url(#clipPath8)" font-family="sans-serif" stroke="none" xml:space="preserve">1</text>
+              <text x="29" font-size="14px" y="23.975" clip-path="url(#clipPath8)" font-family="sans-serif" stroke="none" xml:space="preserve">1</text>
+            </g>
+            <g transform="translate(2830,1630)">
+              <path fill="none" d="M10.5 11.5 L10.5 130.5" clip-path="url(#clipPath9)" class="uml-link" data-connects="domanda domanda" />
+              <path d="M4 22.2583 L10.5 11 L17 22.2583 L10.5 33.0167 Z" clip-path="url(#clipPath9)" stroke="none" class="uml-link" data-connects="domanda domanda" />
+              <path fill="none" d="M4 22.2583 L10.5 11 L17 22.2583 L10.5 33.0167 Z" clip-path="url(#clipPath9)" class="uml-link" data-connects="domanda domanda" />
+              <text x="14" font-size="14px" y="77.9875" clip-path="url(#clipPath9)" font-family="sans-serif" stroke="none" xml:space="preserve">è composta da ▼</text>
+              <text x="14" font-size="14px" y="38.975" clip-path="url(#clipPath9)" font-family="sans-serif" stroke="none" xml:space="preserve">1</text>
+              <text x="14" font-size="14px" y="114" clip-path="url(#clipPath9)" font-family="sans-serif" stroke="none" xml:space="preserve">1..n</text>
+            </g>
+            <g transform="translate(2590,1550)">
+              <path fill="none" d="M11.5 20.5 L170.5 20.5" clip-path="url(#clipPath10)" class="uml-link" data-connects="attività attività" />
+              <path d="M22.2583 27 L11 20.5 L22.2583 14 L33.0167 20.5 Z" clip-path="url(#clipPath10)" stroke="none" class="uml-link" data-connects="attività attività" />
+              <path fill="none" d="M22.2583 27 L11 20.5 L22.2583 14 L33.0167 20.5 Z" clip-path="url(#clipPath10)" class="uml-link" data-connects="attività attività" />
+              <text x="36.1089" font-size="14px" y="16" clip-path="url(#clipPath10)" font-family="sans-serif" stroke="none" xml:space="preserve">è composta da ►</text>
+              <text x="29" font-size="14px" y="33.975" clip-path="url(#clipPath10)" font-family="sans-serif" stroke="none" xml:space="preserve">1</text>
+              <text x="126.6484" font-size="14px" y="33.975" clip-path="url(#clipPath10)" font-family="sans-serif" stroke="none" xml:space="preserve">1..n</text>
+            </g>
+            <g transform="translate(2490,1630)">
+              <path fill="none" d="M10.5 529.5 L10.5 10.5" clip-path="url(#clipPath11)" class="uml-link" data-connects="raccolta-di-attività raccolta-di-attività" />
+              <path d="M17 518.7417 L10.5 530 L4 518.7417 L10.5 507.9833 Z" clip-path="url(#clipPath11)" stroke="none" class="uml-link" data-connects="raccolta-di-attività raccolta-di-attività" />
+              <path fill="none" d="M17 518.7417 L10.5 530 L4 518.7417 L10.5 507.9833 Z" clip-path="url(#clipPath11)" class="uml-link" data-connects="raccolta-di-attività raccolta-di-attività" />
+              <text x="14" font-size="14px" y="277.9875" clip-path="url(#clipPath11)" font-family="sans-serif" stroke="none" xml:space="preserve">contiene ▲</text>
+              <text x="14" font-size="14px" y="514" clip-path="url(#clipPath11)" font-family="sans-serif" stroke="none" xml:space="preserve">1</text>
+              <text x="14" font-size="14px" y="38.975" clip-path="url(#clipPath11)" font-family="sans-serif" stroke="none" xml:space="preserve">0..n</text>
+            </g>
+            <g transform="translate(1900,1150)">
+              <path fill="none" d="M270.5 10.5 L270.5 500.5" clip-path="url(#clipPath12)" class="uml-link" data-connects="documento-di-test test" />
+              <path fill="none" d="M270.5 500.5 L10.5 500.5" clip-path="url(#clipPath12)" class="uml-link" data-connects="documento-di-test test" />
+              <path fill="none" d="M10.5 500.5 L10.5 560.5" clip-path="url(#clipPath12)" class="uml-link" data-connects="documento-di-test test" />
+              <text x="274" font-size="14px" y="422.9875" clip-path="url(#clipPath12)" font-family="sans-serif" stroke="none" xml:space="preserve">riferito a ▼</text>
+              <text x="274" font-size="14px" y="38.975" clip-path="url(#clipPath12)" font-family="sans-serif" stroke="none" xml:space="preserve">1</text>
+              <text x="14" font-size="14px" y="544" clip-path="url(#clipPath12)" font-family="sans-serif" stroke="none" xml:space="preserve">1</text>
+            </g>
+            <g transform="translate(1620,1790)">
+              <path fill="none" d="M200.5 20.5 L10.5 20.5" clip-path="url(#clipPath13)" class="uml-link" data-connects="test corso-pre-post" />
+              <text x="71.7295" font-size="14px" y="16" clip-path="url(#clipPath13)" font-family="sans-serif" stroke="none" xml:space="preserve">prevede ►</text>
+              <text x="156.6484" font-size="14px" y="33.975" clip-path="url(#clipPath13)" font-family="sans-serif" stroke="none" xml:space="preserve">1..n</text>
+              <text x="29" font-size="14px" y="33.975" clip-path="url(#clipPath13)" font-family="sans-serif" stroke="none" xml:space="preserve">0..n</text>
+              <text x="147.3242" font-size="14px" y="16" clip-path="url(#clipPath13)" font-family="sans-serif" stroke="none" xml:space="preserve"> PRE</text>
+            </g>
+            <g transform="translate(1620,1480)">
+              <path fill="none" d="M200.5 290.5 L60.5 290.5" clip-path="url(#clipPath14)" class="uml-link" data-connects="test corso-con-test" />
+              <path fill="none" d="M60.5 290.5 L60.5 10.5" clip-path="url(#clipPath14)" class="uml-link" data-connects="test corso-con-test" />
+              <path fill="none" d="M60.5 10.5 L10.5 10.5" clip-path="url(#clipPath14)" class="uml-link" data-connects="test corso-con-test" />
+              <text x="64" font-size="14px" y="202.9875" clip-path="url(#clipPath14)" font-family="sans-serif" stroke="none" xml:space="preserve">prevede ►</text>
+              <text x="156.6484" font-size="14px" y="303.975" clip-path="url(#clipPath14)" font-family="sans-serif" stroke="none" xml:space="preserve">1..n</text>
+              <text x="29" font-size="14px" y="23.975" clip-path="url(#clipPath14)" font-family="sans-serif" stroke="none" xml:space="preserve">0..n</text>
+              <text x="141.8828" font-size="14px" y="286" clip-path="url(#clipPath14)" font-family="sans-serif" stroke="none" xml:space="preserve">POST</text>
+            </g>
+            <g transform="translate(1660,1900)">
+              <path fill="none" d="M460.5 60.5 L460.5 10.5" clip-path="url(#clipPath15)" class="uml-link" data-connects="amos ml" />
+              <path fill="none" d="M460.5 10.5 L10.5 10.5" clip-path="url(#clipPath15)" class="uml-link" data-connects="amos ml" />
+              <path fill="none" d="M10.5 10.5 L10.5 60.5" clip-path="url(#clipPath15)" class="uml-link" data-connects="amos ml" />
+            </g>
+            <g transform="translate(1890,1830)">
+              <path fill="none" d="M10.5 11.5 L10.5 130.5" clip-path="url(#clipPath16)" class="uml-link" data-connects="test test" />
+              <path fill="white" d="M4 22.2583 L10.5 11 L17 22.2583 Z" clip-path="url(#clipPath16)" stroke="none" class="uml-link" data-connects="test test" />
+              <path fill="none" d="M4 22.2583 L10.5 11 L17 22.2583 Z" clip-path="url(#clipPath16)" class="uml-link" data-connects="test test" />
+            </g>
+            <g transform="translate(1970,1590)">
+              <path fill="none" d="M11.5 160.5 L280.5 160.5" clip-path="url(#clipPath17)" class="uml-link" data-connects="test test" />
+              <path fill="none" d="M280.5 160.5 L280.5 10.5" clip-path="url(#clipPath17)" class="uml-link" data-connects="test test" />
+              <path fill="none" d="M280.5 10.5 L470.5 10.5" clip-path="url(#clipPath17)" class="uml-link" data-connects="test test" />
+              <path fill="white" d="M22.2583 167 L11 160.5 L22.2583 154 L33.0167 160.5 Z" clip-path="url(#clipPath17)" stroke="none" class="uml-link" data-connects="test test" />
+              <path fill="none" d="M22.2583 167 L11 160.5 L22.2583 154 L33.0167 160.5 Z" clip-path="url(#clipPath17)" class="uml-link" data-connects="test test" />
+              <text x="284" font-size="14px" y="132.9875" clip-path="url(#clipPath17)" font-family="sans-serif" stroke="none" xml:space="preserve">ha un insieme di ▲</text>
+              <text x="29" font-size="14px" y="173.975" clip-path="url(#clipPath17)" font-family="sans-serif" stroke="none" xml:space="preserve">0..n</text>
+              <text x="426.6484" font-size="14px" y="23.975" clip-path="url(#clipPath17)" font-family="sans-serif" stroke="none" xml:space="preserve">1..n</text>
+            </g>
+            <g transform="translate(1540,1550)">
+              <path fill="none" d="M10.5 11.5 L10.5 150.5" clip-path="url(#clipPath18)" class="uml-link" data-connects="corso-con-test corso-con-test" />
+              <path fill="white" d="M4 22.2583 L10.5 11 L17 22.2583 Z" clip-path="url(#clipPath18)" stroke="none" class="uml-link" data-connects="corso-con-test corso-con-test" />
+              <path fill="none" d="M4 22.2583 L10.5 11 L17 22.2583 Z" clip-path="url(#clipPath18)" class="uml-link" data-connects="corso-con-test corso-con-test" />
+            </g>
+            <g transform="translate(1530,1300)">
+              <path fill="none" d="M289.5 10.5 L10.5 10.5" clip-path="url(#clipPath19)" class="uml-link" data-connects="corso corso" />
+              <path fill="none" d="M10.5 10.5 L10.5 130.5" clip-path="url(#clipPath19)" class="uml-link" data-connects="corso corso" />
+              <path fill="white" d="M278.7417 4 L290 10.5 L278.7417 17 Z" clip-path="url(#clipPath19)" stroke="none" class="uml-link" data-connects="corso corso" />
+              <path fill="none" d="M278.7417 4 L290 10.5 L278.7417 17 Z" clip-path="url(#clipPath19)" class="uml-link" data-connects="corso corso" />
+            </g>
+            <g transform="translate(1970,1530)">
+              <path fill="none" d="M11.5 20.5 L470.5 20.5" clip-path="url(#clipPath20)" class="uml-link" data-connects="intervento intervento" />
+              <path fill="white" d="M22.2583 27 L11 20.5 L22.2583 14 L33.0167 20.5 Z" clip-path="url(#clipPath20)" stroke="none" class="uml-link" data-connects="intervento intervento" />
+              <path fill="none" d="M22.2583 27 L11 20.5 L22.2583 14 L33.0167 20.5 Z" clip-path="url(#clipPath20)" class="uml-link" data-connects="intervento intervento" />
+              <text x="181.0503" font-size="14px" y="16" clip-path="url(#clipPath20)" font-family="sans-serif" stroke="none" xml:space="preserve">ha un insieme di ►</text>
+              <text x="29" font-size="14px" y="33.975" clip-path="url(#clipPath20)" font-family="sans-serif" stroke="none" xml:space="preserve">0..n</text>
+              <text x="426.6484" font-size="14px" y="33.975" clip-path="url(#clipPath20)" font-family="sans-serif" stroke="none" xml:space="preserve">1..n</text>
+            </g>
+            <g transform="translate(1970,770)">
+              <path fill="none" d="M100.5 10.5 L100.5 510.5" clip-path="url(#clipPath21)" class="uml-link" data-connects="moderatore corso" />
+              <path fill="none" d="M100.5 510.5 L10.5 510.5" clip-path="url(#clipPath21)" class="uml-link" data-connects="moderatore corso" />
+              <text x="104" font-size="14px" y="312.9875" clip-path="url(#clipPath21)" font-family="sans-serif" stroke="none" xml:space="preserve">modera ▼</text>
+              <text x="104" font-size="14px" y="38.975" clip-path="url(#clipPath21)" font-family="sans-serif" stroke="none" xml:space="preserve">1..n</text>
+              <text x="29" font-size="14px" y="523.975" clip-path="url(#clipPath21)" font-family="sans-serif" stroke="none" xml:space="preserve">1</text>
+            </g>
+            <g transform="translate(1970,770)">
+              <path fill="none" d="M10.5 740.5 L370.5 740.5" clip-path="url(#clipPath22)" class="uml-link" data-connects="intervento esperto" />
+              <path fill="none" d="M370.5 740.5 L370.5 10.5" clip-path="url(#clipPath22)" class="uml-link" data-connects="intervento esperto" />
+              <text x="374" font-size="14px" y="562.9875" clip-path="url(#clipPath22)" font-family="sans-serif" stroke="none" xml:space="preserve">presenta ▼</text>
+              <text x="29" font-size="14px" y="753.975" clip-path="url(#clipPath22)" font-family="sans-serif" stroke="none" xml:space="preserve">1..n</text>
+              <text x="374" font-size="14px" y="38.975" clip-path="url(#clipPath22)" font-family="sans-serif" stroke="none" xml:space="preserve">1</text>
+            </g>
+            <g transform="translate(1880,770)">
+              <path fill="none" d="M10.5 260.5 L10.5 10.5" clip-path="url(#clipPath23)" class="uml-link" data-connects="sperimentazione progettista" />
+              <text x="14" font-size="14px" y="142.9875" clip-path="url(#clipPath23)" font-family="sans-serif" stroke="none" xml:space="preserve">gestisce ▼</text>
+              <text x="14" font-size="14px" y="244" clip-path="url(#clipPath23)" font-family="sans-serif" stroke="none" xml:space="preserve">1..n</text>
+              <text x="14" font-size="14px" y="38.975" clip-path="url(#clipPath23)" font-family="sans-serif" stroke="none" xml:space="preserve">1..n</text>
+            </g>
+            <g transform="translate(2160,770)">
+              <path fill="none" d="M10.5 260.5 L10.5 10.5" clip-path="url(#clipPath24)" class="uml-link" data-connects="documento-di-test moderatore" />
+              <text x="14" font-size="14px" y="142.9875" clip-path="url(#clipPath24)" font-family="sans-serif" stroke="none" xml:space="preserve">legge ▼</text>
+              <text x="14" font-size="14px" y="244" clip-path="url(#clipPath24)" font-family="sans-serif" stroke="none" xml:space="preserve">1..n</text>
+              <text x="14" font-size="14px" y="38.975" clip-path="url(#clipPath24)" font-family="sans-serif" stroke="none" xml:space="preserve">1</text>
+            </g>
+            <g transform="translate(1890,1150)">
+              <path fill="none" d="M10.5 90.5 L10.5 11.5" clip-path="url(#clipPath25)" class="uml-link" data-connects="corso sperimentazione" />
+              <path d="M17 22.2583 L10.5 11 L4 22.2583 L10.5 33.0167 Z" clip-path="url(#clipPath25)" stroke="none" class="uml-link" data-connects="corso sperimentazione" />
+              <path fill="none" d="M17 22.2583 L10.5 11 L4 22.2583 L10.5 33.0167 Z" clip-path="url(#clipPath25)" class="uml-link" data-connects="corso sperimentazione" />
+              <text x="14" font-size="14px" y="57.9875" clip-path="url(#clipPath25)" font-family="sans-serif" stroke="none" xml:space="preserve">definisce ▼</text>
+              <text x="14" font-size="14px" y="74" clip-path="url(#clipPath25)" font-family="sans-serif" stroke="none" xml:space="preserve">1..n</text>
+              <text x="14" font-size="14px" y="38.975" clip-path="url(#clipPath25)" font-family="sans-serif" stroke="none" xml:space="preserve">1</text>
+            </g>
+            <g transform="translate(1970,1150)">
+              <path fill="none" d="M600.5 10.5 L600.5 150.5" clip-path="url(#clipPath26)" class="uml-link" data-connects="feedback corso" />
+              <path fill="none" d="M600.5 150.5 L10.5 150.5" clip-path="url(#clipPath26)" class="uml-link" data-connects="feedback corso" />
+              <text x="335.8916" font-size="14px" y="146" clip-path="url(#clipPath26)" font-family="sans-serif" stroke="none" xml:space="preserve">può avere ►</text>
+              <text x="604" font-size="14px" y="38.975" clip-path="url(#clipPath26)" font-family="sans-serif" stroke="none" xml:space="preserve">0..1</text>
+              <text x="29" font-size="14px" y="163.975" clip-path="url(#clipPath26)" font-family="sans-serif" stroke="none" xml:space="preserve">1</text>
+            </g>
+            <g transform="translate(1890,1360)">
+              <path fill="none" d="M10.5 11.5 L10.5 110.5" clip-path="url(#clipPath27)" class="uml-link" data-connects="corso corso" />
+              <path d="M4 22.2583 L10.5 11 L17 22.2583 L10.5 33.0167 Z" clip-path="url(#clipPath27)" stroke="none" class="uml-link" data-connects="corso corso" />
+              <path fill="none" d="M4 22.2583 L10.5 11 L17 22.2583 L10.5 33.0167 Z" clip-path="url(#clipPath27)" class="uml-link" data-connects="corso corso" />
+              <text x="14" font-size="14px" y="67.9875" clip-path="url(#clipPath27)" font-family="sans-serif" stroke="none" xml:space="preserve">è composto da ▼</text>
+              <text x="14" font-size="14px" y="38.975" clip-path="url(#clipPath27)" font-family="sans-serif" stroke="none" xml:space="preserve">1</text>
+              <text x="14" font-size="14px" y="94" clip-path="url(#clipPath27)" font-family="sans-serif" stroke="none" xml:space="preserve">1</text>
+            </g>
+            <g transform="translate(3190,770)">
+              <path fill="none" d="M10.5 11.5 L10.5 110.5" clip-path="url(#clipPath28)" class="uml-link" data-connects="classe classe" />
+              <path fill="white" d="M4 22.2583 L10.5 11 L17 22.2583 Z" clip-path="url(#clipPath28)" stroke="none" class="uml-link" data-connects="classe classe" />
+              <path fill="none" d="M4 22.2583 L10.5 11 L17 22.2583 Z" clip-path="url(#clipPath28)" class="uml-link" data-connects="classe classe" />
+            </g>
+            <g transform="translate(2550,770)">
+              <path fill="none" d="M10.5 10.5 L10.5 260.5" clip-path="url(#clipPath29)" class="uml-link" data-connects="testato feedback" />
+              <text x="14" font-size="14px" y="142.9875" clip-path="url(#clipPath29)" font-family="sans-serif" stroke="none" xml:space="preserve">rilascia ▼</text>
+              <text x="14" font-size="14px" y="38.975" clip-path="url(#clipPath29)" font-family="sans-serif" stroke="none" xml:space="preserve">1</text>
+              <text x="14" font-size="14px" y="244" clip-path="url(#clipPath29)" font-family="sans-serif" stroke="none" xml:space="preserve">1</text>
+            </g>
+            <g transform="translate(2630,700)">
+              <path fill="none" d="M489.5 20.5 L10.5 20.5" clip-path="url(#clipPath30)" class="uml-link" data-connects="classe classe" />
+              <path d="M478.7417 14 L490 20.5 L478.7417 27 L467.9833 20.5 Z" clip-path="url(#clipPath30)" stroke="none" class="uml-link" data-connects="classe classe" />
+              <path fill="none" d="M478.7417 14 L490 20.5 L478.7417 27 L467.9833 20.5 Z" clip-path="url(#clipPath30)" class="uml-link" data-connects="classe classe" />
+              <text x="210.895" font-size="14px" y="16" clip-path="url(#clipPath30)" font-family="sans-serif" stroke="none" xml:space="preserve">fa parte di ►</text>
+              <text x="462.2139" font-size="14px" y="33.975" clip-path="url(#clipPath30)" font-family="sans-serif" stroke="none" xml:space="preserve">1</text>
+              <text x="29" font-size="14px" y="33.975" clip-path="url(#clipPath30)" font-family="sans-serif" stroke="none" xml:space="preserve">1..n</text>
+            </g>
+            <g transform="translate(2330,590)">
+              <path fill="none" d="M10.5 10.5 L10.5 60.5" clip-path="url(#clipPath31)" />
+            </g>
+            <g transform="translate(1870,590)">
+              <path fill="none" d="M10.5 60.5 L10.5 10.5" clip-path="url(#clipPath32)" class="uml-link" data-connects="progettista testato" />
+              <path fill="none" d="M10.5 10.5 L700.5 10.5" clip-path="url(#clipPath32)" class="uml-link" data-connects="progettista testato" />
+              <path fill="none" d="M700.5 10.5 L700.5 60.5" clip-path="url(#clipPath32)" class="uml-link" data-connects="progettista testato" />
+            </g>
+            <g transform="translate(2110,530)">
+              <path fill="none" d="M10.5 11.5 L10.5 120.5" clip-path="url(#clipPath33)" class="uml-link" data-connects="ruolo ruolo" />
+              <path fill="white" d="M4 22.2583 L10.5 11 L17 22.2583 Z" clip-path="url(#clipPath33)" stroke="none" class="uml-link" data-connects="ruolo ruolo" />
+              <path fill="none" d="M4 22.2583 L10.5 11 L17 22.2583 Z" clip-path="url(#clipPath33)" class="uml-link" data-connects="ruolo ruolo" />
+            </g>
+            <g transform="translate(2330,640)">
+              <path fill="none" d="MNaN NaN L10.5 10.5" clip-path="url(#clipPath34)" />
+              <path fill="white" d="MNaN NaN LNaN NaN LNaN NaN Z" clip-path="url(#clipPath34)" stroke="none" />
+              <path fill="none" d="MNaN NaN LNaN NaN LNaN NaN Z" clip-path="url(#clipPath34)" />
+            </g>
+            <g transform="translate(1970,460)">
+              <path fill="none" d="M100.5 20.5 L10.5 20.5" clip-path="url(#clipPath35)" class="uml-link" data-connects="ruolo utente" />
+              <text x="39.2397" font-size="14px" y="16" clip-path="url(#clipPath35)" font-family="sans-serif" stroke="none" xml:space="preserve">ha ►</text>
+              <text x="72.2139" font-size="14px" y="33.975" clip-path="url(#clipPath35)" font-family="sans-serif" stroke="none" xml:space="preserve">1</text>
+              <text x="29" font-size="14px" y="33.975" clip-path="url(#clipPath35)" font-family="sans-serif" stroke="none" xml:space="preserve">0..n</text>
+            </g>
+            <g transform="translate(1680,330)">
+              <path fill="none" d="M460.5 80.5 L460.5 20.5" clip-path="url(#clipPath36)" class="uml-link" data-connects="ruolo progettista" />
+              <path fill="none" d="M460.5 20.5 L30.5 20.5" clip-path="url(#clipPath36)" class="uml-link" data-connects="ruolo progettista" />
+              <path fill="none" d="M30.5 20.5 L30.5 390.5" clip-path="url(#clipPath36)" class="uml-link" data-connects="ruolo progettista" />
+              <path fill="none" d="M30.5 390.5 L140.5 390.5" clip-path="url(#clipPath36)" class="uml-link" data-connects="ruolo progettista" />
+              <text x="1.3467" font-size="14px" y="16" clip-path="url(#clipPath36)" font-family="sans-serif" stroke="none" xml:space="preserve">gestisce ►</text>
+              <text x="464" font-size="14px" y="64" clip-path="url(#clipPath36)" font-family="sans-serif" stroke="none" xml:space="preserve">1..n</text>
+              <text x="96.6484" font-size="14px" y="403.975" clip-path="url(#clipPath36)" font-family="sans-serif" stroke="none" xml:space="preserve">1..n</text>
+            </g>
+            <g transform="translate(1740,460)">
+              <path fill="none" d="M80.5 230.5 L10.5 230.5" clip-path="url(#clipPath37)" class="uml-link" data-connects="progettista utente" />
+              <path fill="none" d="M10.5 230.5 L10.5 10.5" clip-path="url(#clipPath37)" class="uml-link" data-connects="progettista utente" />
+              <path fill="none" d="M10.5 10.5 L80.5 10.5" clip-path="url(#clipPath37)" class="uml-link" data-connects="progettista utente" />
+              <text x="14" font-size="14px" y="127.9875" clip-path="url(#clipPath37)" font-family="sans-serif" stroke="none" xml:space="preserve">gestisce ▲</text>
+              <text x="36.6484" font-size="14px" y="243.975" clip-path="url(#clipPath37)" font-family="sans-serif" stroke="none" xml:space="preserve">0..n</text>
+              <text x="52.2139" font-size="14px" y="23.975" clip-path="url(#clipPath37)" font-family="sans-serif" stroke="none" xml:space="preserve">1</text>
+            </g>
+            <g transform="translate(2220,460)">
+              <path fill="none" d="M11.5 20.5 L160.5 20.5" clip-path="url(#clipPath38)" class="uml-link" data-connects="ruolo ruolo" />
+              <path fill="white" d="M22.2583 27 L11 20.5 L22.2583 14 L33.0167 20.5 Z" clip-path="url(#clipPath38)" stroke="none" class="uml-link" data-connects="ruolo ruolo" />
+              <path fill="none" d="M22.2583 27 L11 20.5 L22.2583 14 L33.0167 20.5 Z" clip-path="url(#clipPath38)" class="uml-link" data-connects="ruolo ruolo" />
+              <text x="33.0469" font-size="14px" y="16" clip-path="url(#clipPath38)" font-family="sans-serif" stroke="none" xml:space="preserve">è assegnato a ►</text>
+              <text x="29" font-size="14px" y="33.975" clip-path="url(#clipPath38)" font-family="sans-serif" stroke="none" xml:space="preserve">0..n</text>
+              <text x="116.6484" font-size="14px" y="33.975" clip-path="url(#clipPath38)" font-family="sans-serif" stroke="none" xml:space="preserve">1..n</text>
+            </g>
+            <g transform="translate(3050,870)">
+              <path fill="none" d="M10.5 50.5 L10.5 10.5" clip-path="url(#clipPath39)" class="uml-link" data-connects="sperimentale di-controllo" />
+              <path fill="none" d="M10.5 10.5 L310.5 10.5" clip-path="url(#clipPath39)" class="uml-link" data-connects="sperimentale di-controllo" />
+              <path fill="none" d="M310.5 10.5 L310.5 50.5" clip-path="url(#clipPath39)" class="uml-link" data-connects="sperimentale di-controllo" />
+            </g>
+          </g>
+        </svg>
+    </div>
+</div>
+
+<script src="https://unpkg.com/@panzoom/panzoom/dist/panzoom.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const container = document.getElementById('svg-container');
+    const svgElement = container.querySelector('svg');
+
+    if (!svgElement) return;
+
+    // Adatta l'SVG al container
+    svgElement.style.width = '100%';
+    svgElement.style.height = '100%';
+
+    // Inizializza Panzoom
+    const panzoom = Panzoom(svgElement, { maxScale: 10, minScale: 1, contain: 'outside' });
+    container.parentElement.addEventListener('wheel', panzoom.zoomWithWheel);
+
+    // Logica di interazione
+    const classes = svgElement.querySelectorAll('.uml-class');
+    const links = svgElement.querySelectorAll('.uml-link');
+
+    classes.forEach(cls => {
+        cls.addEventListener('click', function(e) {
+            e.stopPropagation(); 
+            const clickedId = this.id;
+
+            // Applica il dimming generale
+            classes.forEach(c => c.classList.add('dimmed'));
+            links.forEach(l => l.classList.add('dimmed'));
+
+            // Evidenzia l'entità cliccata
+            this.classList.remove('dimmed');
+            this.classList.add('highlighted');
+
+            // Cerca le relazioni
+            links.forEach(link => {
+                const connects = link.getAttribute('data-connects') || "";
+                if (connects.includes(clickedId)) {
+                    link.classList.remove('dimmed');
+                    link.classList.add('highlighted');
+
+                    // Evidenzia i nodi di destinazione
+                    const connectedIds = connects.split(' ');
+                    connectedIds.forEach(connId => {
+                        const connectedNode = svgElement.querySelector(`#${connId}`);
+                        if(connectedNode) {
+                            connectedNode.classList.remove('dimmed');
+                            connectedNode.classList.add('highlighted-linked');
+                        }
+                    });
+                }
+            });
+        });
+    });
+
+    // Reset vista
+    document.getElementById('reset-diagram').addEventListener('click', () => {
+        svgElement.querySelectorAll('.dimmed, .highlighted, .highlighted-linked').forEach(el => {
+            el.classList.remove('dimmed', 'highlighted', 'highlighted-linked');
+        });
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Torna su
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.top", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiato", "clipboard.copy": "Copia", "search.result.more.one": "1 altro in questa pagina", "search.result.more.other": "# altri in questa pagina", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.term.missing": "Non presente", "select.version": "Seleziona la versione"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -4,17 +4,21 @@
 
 Nel progetto concettuale un'attività ha diversi attributi che la identificano:
 
-* Nome :material-arrow-right-thin: rappresenta il nome dell'attività, che deve essere univoco all'interno del progetto
-* Istruzioni :material-arrow-right-thin: rappresentano le istruzioni che il testato deve seguire per completare l'attività
-* Tipo :material-arrow-right-thin: rappresenta la tipologia di appartenenza dell'attività (es. Riconoscere un modello tipico, Stile cognitivo ecc.)
+* **Nome** :material-arrow-right-thin: rappresenta il nome dell'attività, che deve essere univoco all'interno del progetto
+* **Istruzioni** :material-arrow-right-thin: rappresentano le istruzioni che il testato deve seguire per completare l'attività
+* **Tipo** :material-arrow-right-thin: rappresenta la tipologia di appartenenza dell'attività (es. Riconoscere un modello tipico, Stile cognitivo ecc.)
 
-Un <span class="term">obiettivo formativo<span class="tip"><strong>Obiettivo formativo</strong><br>Descrizione qui.</span></span> collegato a...
-
-Essa è costituta da una o più [Domande](questions_and_responses.md) e ogni domanda a sua volta è costituita da una o più [Risposte](questions_and_responses.md) secondo il seguente schema:
+Essa è costituita da una o più [domande](questions_and_responses.md) a loro volta costituite da una o più [risposte](questions_and_responses.md) secondo il seguente schema:
 
 <p align="center">
-  <img src="../assets/images/activities.svg" alt="Attività">
+  <img src="../assets/images/activity.svg" alt="Attività">
 </p>
+
+> [!IMPORTANTE]
+> Un'attività ha un rapporto di <span class="term">composizione <span class="tip"><strong>Composizione</strong><br>
+> In UML è una relazione strutturale di tipo "tutto-parte" molto forte, in cui la classe contenitore possiede e controlla totalmente il ciclo di vita degli oggetti contenuti.<br>
+> </span> </span> 
+> con le domande, questo significa che se essa viene eliminata, anche tutte le domande di cui è composta verrano eliminate.
 
 > [!ESEMPIO]
 > **Nome**: Questionario sulle teorie dell'intelligenza
@@ -42,16 +46,17 @@ Essa è costituta da una o più [Domande](questions_and_responses.md) e ogni dom
 ***
 
 ## Moodle
-In Moodle, non esiste un concetto di Attività nella quale è possibile inserire una o più domande, tuttavia è possibile avere una rappresentazione molto simile attraverso le ==Categorie== gestibili nel [Deposito delle domande](activity-collection.md), che permettono di raggruppare serie di domande.
+In Moodle, non esiste un concetto di Attività nella quale è possibile inserire una o più domande, tuttavia è possibile avere una rappresentazione molto simile attraverso le **Categorie** gestibili nel [deposito delle domande](activity_collection.md), che permettono di raggruppare serie di domande.
 
-Il meccanismo è molto semplice, il progettista per ogni attività che ha definito nel progetto, crea una categoria nel [Deposito delle domande](activity-collection.md) e all'interno di questa categoria inserisce tutte le domande che fanno parte dell'attività stessa.
+Il meccanismo è molto semplice, il Progettista:material-account-hard-hat: per ogni attività che ha definito nel progetto, crea una categoria nel [deposito delle domande](activity_collection.md) e all'interno di questa categoria inserisce tutte le domande che fanno parte dell'attività stessa.
+
 
 ### Creare una nuova attività
-Per creare una nuova attività è importante che l'utente sia all'interno di un [Deposito delle domande](activity-collection.md) esistente.
+Per creare una nuova attività è importante che l'utente sia all'interno di un [deposito delle domande](activity_collection.md) esistente.
 A questo punto i passi sono:
 
-1. Nel menù a tendina in alto a sinistra scegliere "Categorie"
-1. Cliccare sul pulsante "Aggiungi categoria" e compilare i campi:
+1. Nel menù a tendina in alto a sinistra scegliere **Categorie**
+1. Cliccare sul pulsante **Aggiungi categoria** e compilare i campi:
 
     * **Categoria genitore** :material-arrow-right-thin: rappresenta a quale categoria si vuole inserire l'attività
     * **Nome** :material-arrow-right-thin: rappresenta il nome della nuova categoria
@@ -67,24 +72,24 @@ A questo punto i passi sono:
 >     * **Nome**: Stile cognitivo
 >     * **Informazioni categoria (opzionale)**: La seguente categoria contiene tutte le attività che contengono domande relative allo stile cognitivo.
 >
-> 1. Successivamente, all'interno dell'attività appena creata, il progettista potrà creare nuove sotto-categorie per ogni attività specifica, ad esempio:
+> 1. Successivamente, all'interno dell'attività appena creata, il Progettista:material-account-hard-hat: potrà creare nuove sotto-categorie per ogni attività specifica, ad esempio:
 >
 >     * **Categoria genitore**: Stile cognitivo
 >     * **Nome**: Questionario sulle teorie dell'intelligenza
 >     * **Informazioni categoria (opzionale)**: La seguente categoria contiene tutte le domande relative al questionario sulle teorie dell'intelligenza.
 >
-> 1. In questa nuova sotto-categoria appena creata, il progettista inserirà tutte le domande che fanno parte dell'attività.
+> 1. In questa nuova sotto-categoria appena creata, il Progettista:material-account-hard-hat: inserirà tutte le domande che fanno parte dell'attività.
 
 ### Modificare un'attività
-Per modificare un'attività è importante che l'utente sia all'interno del [Deposito delle domande](activity-collection.md).
+Per modificare un'attività è importante che l'utente sia all'interno del [deposito delle domande](activity_collection.md).
 
-1. Nel menù a tendina in alto a sinistra scegliere "Categorie"
+1. Nel menù a tendina in alto a sinistra scegliere **Categorie**
 1. Scorrere la lista delle attività fino a trovare quella che si vuole modificare e premere il menù a tre puntini
-1. All'interno del menù selezionare "Impostazioni <img src="../assets/icons/edit.svg" alt="Modifica" width="10">" e modificare i campi desiderati.
+1. All'interno del menù selezionare **Impostazioni <img src="../assets/icons/edit.svg" alt="Modifica" width="10">** e modificare i campi desiderati.
 
 ### Eliminare un'attività
-Per eliminare un'attività è importante che l'utente sia all'interno del [Deposito delle domande](activity-collection.md).
+Per eliminare un'attività è importante che l'utente sia all'interno del [deposito delle domande](activity_collection.md).
 
-1. Nel menù a tendina in alto a sinistra scegliere "Categorie"
+1. Nel menù a tendina in alto a sinistra scegliere **Categorie**
 1. Scorrere la lista delle attività fino a trovare quella che si vuole eliminare e premere il menù a tre puntini
-1. All'interno del menù selezionare "Elimina <img src="../assets/icons/delete.svg" alt="Elimina" width="10">" e confermare l'eliminazione dell'attività.
+1. All'interno del menù selezionare **Elimina <img src="../assets/icons/delete.svg" alt="Elimina" width="10">** e confermare l'eliminazione dell'attività.
