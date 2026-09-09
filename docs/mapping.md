@@ -1,4 +1,4 @@
-Per comprendere meglio i riferimenti tra i concetti astratti del progetto sviluppato e quelli concreti definiti su Moodle, viene generata questa tabella che permette di mappare le due definizioni.
+Per comprendere meglio i riferimenti tra i concetti astratti del progetto sviluppato e quelli concreti definiti su Moodle, viene generata una tabella, per ogni caso d'uso, che permette di mappare le due definizioni.
 
 === "Gestione delle Sperimentazioni"
 
@@ -22,4 +22,10 @@ Per comprendere meglio i riferimenti tra i concetti astratti del progetto svilup
     | Progetto | Moodle |
     | ----------- | ----------- |
     | [Utente](user.md) | Utente |
-    | [Ruolo](role.md) | Ruolo |
+    | [Ruolo](role.md) | Ruolo globale |
+
+=== "Gestione delle Classi"
+
+    | Progetto | Moodle |
+    | ----------- | ----------- |
+    | [Classe](class.md) | Gruppo globale |

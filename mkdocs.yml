@@ -3,7 +3,13 @@ repo_url: https://github.com/EmAlter/ML-Project
 repo_name: emalter/ML-Project
 nav:
   - Home: index.md
-  - Tesi: thesis.md
+  - Documentazione:
+    - Tesi: thesis.md
+    - Articoli: articles.md
+  - Preparazione del Sistema:
+    - Codice iniettato e Plugins: plugin.md
+    - Tablet: tablet.md
+    - File CSV: csv.md
   - Mapping dei Nomi: mapping.md
   - Attore: actor.md
   - Diagramma Interattivo: diagram.md
@@ -22,9 +28,8 @@ nav:
       - Utente: user.md
     - Gestire le Classi:
       - Classe: class.md
-  - Preparazione del Sistema:
-    - Codice iniettato e Plugins: plugin.md
-    - Tablet: tablet.md
+  - Albero: tree.md
+  
 plugins:
   - search
   - callouts

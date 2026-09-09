@@ -53,6 +53,10 @@ A questo punto:
 * **ELIMINARE**: Cliccare sull'icona del cestino <img src="../assets/icons/delete.svg" alt="Elimina" width="10"> a fianco al ruolo desiderato e confermare l'eliminazione del ruolo.
 
 ### Assegnare o rimuovere un ruolo a un utente in Moodle
+
+> [!TIP]
+> È possibile assegnare un ruolo a nuovi utenti (non ancora registrati) contemporaneamente tramite un file CSV (vedi [Creare o aggiornare più utenti contemporaneamente](csv.md#creare-o-aggiornare-piu-utenti-contemporaneamente)).
+
 Per assegnare o rimuovere un ruolo a un utente in Moodle è necessario rispettare alcune precondizioni:
 
 * L'utente a cui si vuole assegnare il ruolo deve essere già registrato nel sistema, in quanto non è possibile assegnare un ruolo a un utente non esistente.

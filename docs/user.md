@@ -10,9 +10,13 @@ Nel progetto concettuale, un **Utente** rappresenta una persona con determinati 
 * **Cognome** :material-arrow-right-thin: rappresenta il cognome dell'utente
 * **Data di nascita** :material-arrow-right-thin: rappresenta la data di nascita dell'utente
 
-Il **Progettista:material-account-hard-hat:** si occupa di creare/modificare/eliminare gli **Utenti**, mentre il **Moderatore:material-shield-account:** può visualizzarli ed eventualmente aggiornare i loro dati anagrafici e certificazioni.
+<p align="center">
+  <img src="../assets/images/user.svg" alt="Utente">
+</p>
 
 Dal punto di vista concettuale, l'utente è un "guscio vuoto" che non ha alcun significato senza un ruolo associato, per questo motivo a ognuno di essi viene associato un [Ruolo](role.md) che ne definisce le azioni che può compiere all'interno del sistema.
+
+Il **Progettista:material-account-hard-hat:** si occupa di creare/modificare/eliminare gli **Utenti**, mentre il **Moderatore:material-shield-account:** può visualizzarli ed eventualmente aggiornare i loro dati anagrafici e certificazioni.
 
 
 ## Moodle
@@ -29,10 +33,11 @@ Un campo personalizzato permette di aggiungere ulteriori informazioni per l'uten
 
 I passi sono:
 
-1. Accedere alla Home page di Moodle
+1. Accedere alla pagina **Amministrazione del sito** di Moodle
 1. Cliccare su **Utenti** nel menù centrale
 1. Nella sezione **Profili** cliccare su **Campi personalizzati**
-1. Cliccare nel menù a tendina "Crea un campo personalizzato" e selezionare il tipo di campo da creare (es. Data e ora, Testo, ecc.)
+1. Nella pagina ci sarà una categoria di campi chiamata **Altri campi**, è possibile utilizzare questa categoria (eventualmente modificandone il nome) oppure crearne una nuova cliccando su **Crea una nuova categoria** e inserendo il nome della categoria
+1. Cliccare nel menù a tendina **Crea un campo personalizzato** e selezionare il tipo di campo da creare (es. Data e ora, Testo, ecc.)
 1. Nella pagina che si apre popolare i seguenti campi obbligatori:
 
     * **Nome** :material-arrow-right-thin: rappresenta il nome del campo che sarà visibile agli utenti
@@ -42,17 +47,22 @@ I passi sono:
 1. Mettere la spunta in **Da compilare nella pagina di creazione account** se si vuole che il campo sia compilabile in fase di creazione dell'utente
 1. Cliccare su **Salva modifiche** per terminare la creazione.
 
-A questo punto, i campi personalizzati creati saranno visibili nella pagina di creazione dell'utente sotto la categoria "Altri campi".
+A questo punto, i campi personalizzati creati saranno visibili nella pagina di creazione dell'utente sotto la categoria in cui sono stati definiti (es. **Altri campi**).
 
 > [!ESEMPIO]
-> Un esempio di campo personalizzato potrebbe essere "Data di nascita", che permette di registrare la data di nascita degli utenti.
-> Il campo **Nome** sarà "Data di nascita" con **Nome abbreviato** "datanascita".<br>
-> Questo tipo di campo (Data e Ora) richiede una anno minimo e massimo da impostare.
+> Un esempio di campo personalizzato potrebbe essere "Data di nascita", che permette di registrare la data di nascita degli utenti.<br>
+> In questo esempio, **Nome** sarà `Data di nascita`, **Nome abbreviato** sarà `datanascita` e
+> poichè il campo personalizzato è di tipo "Data e Ora", sarà possibile impostare un anno minimo e massimo per la data di nascita, in modo da evitare che vengano inseriti valori non validi.
+> 
 
 ### Creare un nuovo utente
+
+> [!TIP]
+> È possibile creare più utenti contemporaneamente tramite un file CSV (vedi [Creare o aggiornare più utenti contemporaneamente](csv.md#creare-o-aggiornare-piu-utenti-contemporaneamente)).
+
 I passi sono:
 
-1. Accedere alla Home page di Moodle
+1. Accedere alla pagina **Amministrazione del sito** di Moodle
 1. Cliccare su **Utenti** nel menù centrale
 1. Nella sezione **Profili** cliccare su **Nuovo utente**
 1. Inserire i seguenti campi di default obbligatori:
@@ -69,67 +79,31 @@ I passi sono:
 > [!IMPORTANTE]
 > Una volta creato il nuovo utente, il **Progettista:material-account-hard-hat:** dovrà assegnargli un [Ruolo](role.md) per permettergli di svolgere le azioni previste dal progetto concettuale (vedi [Assegnare o rimuovere un ruolo a un utente in Moodle](role.md#assegnare-o-rimuovere-un-ruolo-a-un-utente-in-moodle)).
 
-### Creare un nuovo utente tramite CSV file
-Per semplificare la creazione di più utenti, Moodle permette di creare un nuovo utente tramite un file CSV contenente un elenco degli utenti da creare.
 
-> [!TIP]
-> Creare nuovi utenti tramite CSV è preferibile perché permette di assegnare direttamente un ruolo senza passi aggiuntivi, opzione non possibile nella creazione singola dell'utente.
-
-#### Impostare il file CSV
-Per prima cosa bisogna preparare un file CSV con i dati degli utenti da creare.<br>
-La prima riga del file CSV deve contenere le seguenti colonne obbligatorie di default:
-
-```csv
-username,firstname,lastname,email,password
-```
-
-Poichè nel progetto abbiamo previsto anche la data di nascita, dovrà esserci anche la colonna relativa al campo personalizzato creato in precedenza (vedi [Creare un campo personalizzato per l'utente](#creare-un-campo-personalizzato-per-lutente)), che sarà formata dal termine `profile_field_` seguita dal nome abbreviato del campo, quindi in questo caso `profile_field_datanascita`:<br>
-
-```csv
-username,firstname,lastname,email,password,profile_field_datanascita
-```
-
-Per ogni utente è previsto anche un ruolo, **sebbene non sia possibile assegnare un ruolo in fase di creazione singola dell'utente**, è possibile farlo tramite CSV inserendo la colonna `sysrole1` (vedi **Nome abbreviato** in [Ruolo](role.md)):<br>
-
-```csv
-username,firstname,lastname,email,password,profile_field_datanascita,sysrole1
-```
-
-Riassumendo, le colonne sono:
-
-* `username` :material-arrow-right-thin: rappresenta il **token univoco** che l'utente utilizzerà per accedere al sistema
-* `firstname` :material-arrow-right-thin: rappresenta il nome dell'utente
-* `lastname` :material-arrow-right-thin: rappresenta il cognome dell'utente
-* `email` :material-arrow-right-thin: rappresenta l'indirizzo email dell'utente (dovrà essere un email fittizia)
-* `password` :material-arrow-right-thin: rappresenta la password assegnata all'utente (non sarà usata, vedi il plugin [Login](plugin.md#login))
-* `profile_field_datanascita` :material-arrow-right-thin: rappresenta la data di nascita dell'utente
-* `sysrole1` :material-arrow-right-thin: rappresenta il ruolo che l'utente dovrà avere all'interno del sistema, (vedi **Nome abbreviato** in [Ruolo](role.md))
-
-> [!ESEMPIO]
-> ```csv
-> username,firstname,lastname,email,password,profile_field_datanascita,sysrole1
-> TokenMR,Mario,Rossi,emailfittizia.mariorossi@email.it,mr1998,1998-01-01,testato
-> TokenAP,Artù,Pendragon,emailfittizia.artupendragon@email.it,ap1999,1999-02-02,moderatore
-> ```
-
-> [!ATTENZIONE]
-> Il campo `profile_field_datanascita`, essendo un campo di tipo Data e Ora, deve rispettare il formato `YYYY-MM-DD` (anno-mese-giorno), altrimenti Moodle non riuscirà a interpretarlo correttamente.
-
-#### Inserire gli utenti
-1. Accedere alla Home page di Moodle
-1. Cliccare su **Utenti** nel menù centrale
-1. Nella sezione **Profili** cliccare su **Importazione utenti**
-1. Trascinare il file CSV nella sezione apposita e selezionare il tipo di separatore utilizzato (in questo caso la virgola `,`)
-1. Cliccare su **Importazione utenti**
-1. Nella pagina che si apre è importante comprendere cosa fa il campo "Modalità importazione":
-
-    * **Crea solamente i nuovi utenti, ignora gli utenti già esistenti:** Crea account solo per gli username che non sono ancora presenti nel database di Moodle. Se il file CSV contiene un username già registrato, quella specifica riga viene ignorata senza alterare i dati preesistenti.
-    * **Crea tutti gli utenti, aggiungendo un numero agli username ove necessario:** Forza la creazione di un nuovo account per ogni riga del CSV. Se rileva un username in conflitto con uno già a sistema (es. `mario.rossi`), crea un nuovo utente generando una variante numerata (es. `mario.rossi2`).
-    * **Crea i nuovi utenti ed aggiorna gli utenti già esistenti:** Inserisce gli account inediti e, per gli username già riconosciuti dal sistema, sovrascrive o popola i campi del profilo (inclusi ruoli o campi custom) con i nuovi valori forniti nel file.
-    * **Aggiorna solamente gli utenti già esistenti:** Non genera alcun nuovo profilo. Cerca nel database gli username indicati nel file e ne modifica esclusivamente i dati.
-
-
-1. Poichè le password sono definite nel file CSV, scegliere dal menù a tendina **Il campo è presente nel file**
-1. Infine cliccare su **Importazione utenti** per terminare.
 
 ### Modificare un utente
+
+> [!TIP]
+> È possibile modificare i dati di più utenti contemporaneamente tramite un file CSV (vedi [Creare o aggiornare più utenti contemporaneamente](csv.md#creare-o-aggiornare-piu-utenti-contemporaneamente)).
+
+I passi sono:
+
+1. Accedere alla pagina **Amministrazione del sito** di Moodle
+1. Cliccare su **Utenti** nel menù centrale
+1. Nella sezione **Profili** cliccare su **Elenco Utenti**
+1. Cercare l'utente (eventualmente aiutandosi con la barra di ricerca), cliccare sul menù <img src="../assets/icons/dots-vertical.svg" alt="Menù a pallini" width="10"> e scegliere **Modifica <img src="../assets/icons/edit.svg" alt="Modifica" width="10">**
+1. Nella pagina che si apre modificare i campi desiderati e cliccare su **Aggiornamento profilo** in fondo alla pagina per terminare la modifica dell'utente.
+
+### Eliminare un utente
+
+> [!TIP]
+> I passi successivi permettono di eliminare uno o più utenti alla volta
+
+I passi sono:
+
+1. Accedere alla pagina **Amministrazione del sito** di Moodle
+1. Cliccare su **Utenti** nel menù centrale
+1. Nella sezione **Profili** cliccare su **Azioni in massa**
+1. Utilizzare i filtri per trovare l'utente da eliminare, evidenziare nel riquadro a sinistra l'utente da eliminare e cliccare sul pulsante **Aggiungi alla selezione** per spostarlo nel riquadro a destra
+1. Scorrere in basso e nel menù a tendina scegliere come azione **Elimina** e cliccare sul pulsante **Vai** per procedere con l'eliminazione
+1. Nella pagina che si apre, confermare l'eliminazione dell'utente cliccando sul pulsante **Sì**.
