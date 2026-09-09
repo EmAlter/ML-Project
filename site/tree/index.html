@@ -1472,7 +1472,6 @@
     display: flex; flex-direction: column; gap: 20px; 
   }
 
-  /* Stile Arknights Endfield per l'header del livello */
   .level-header {
     display: flex; align-items: center; gap: 15px;
   }
@@ -1487,12 +1486,10 @@
     opacity: 0.4;
   }
 
-  /* Contenitore dei nodi spostato leggermente a destra */
   .level-nodes {
     display: flex; gap: 25px; flex-wrap: wrap; padding-left: 15px;
   }
 
-  /* Stile "modulo" per i blocchi */
   .node { 
     border: 1px solid var(--md-default-fg-color--light); 
     border-radius: 2px; padding: 12px 20px; 
@@ -1522,7 +1519,6 @@
     margin: 0;
   }
 
-    /* Stile per il link di navigazione */
   .node-link {
     text-decoration: none;
     color: var(--md-primary-fg-color);
@@ -1534,7 +1530,7 @@
   .node-link:hover {
     background: rgba(128, 128, 128, 0.2);
   }
-  /* Disabilita il click sul link se il nodo è bloccato */
+
   .node.locked .node-link {
     opacity: 0.3;
     pointer-events: none; 
@@ -1551,13 +1547,18 @@
     <div class="level-nodes">
       <div class="node" id="ui-raccolta">
         <input type="checkbox" id="chk-raccolta" class="node-chk">
-        <label for="chk-raccolta">Crea Raccolta Attività</label>
-        <span markdown="span">[↗](activity_collection.md){: .node-link title="Vai alla guida" }</span>
+        <label for="chk-raccolta">Creare una Raccolta Attività</label>
+        <a href="../activity_collection/" class="node-link" title="Vai alla guida">↗</a>
       </div>
       <div class="node" id="ui-ruolo">
         <input type="checkbox" id="chk-ruolo" class="node-chk">
-        <label for="chk-ruolo">Crea Ruolo</label>
+        <label for="chk-ruolo">Creare un Ruolo</label>
         <a href="../role/" class="node-link" title="Vai alla guida">↗</a>
+      </div>
+        <div class="node" id="ui-classe">
+        <input type="checkbox" id="chk-classe" class="node-chk">
+        <label for="chk-classe">Creare una Classe</label>
+        <a href="../class/" class="node-link" title="Vai alla guida">↗</a>
       </div>
     </div>
   </div>
@@ -1572,7 +1573,7 @@
       <div class="node locked" id="ui-attivita">
         <input type="checkbox" id="chk-attivita" class="node-chk" disabled>
         <label for="chk-attivita">Crea Attività</label>
-        <a href="activity.md" class="node-link" title="Vai alla guida">↗</a>
+        <a href="../activity/" class="node-link" title="Vai alla guida">↗</a>
       </div>
     </div>
   </div>
@@ -1587,7 +1588,7 @@
       <div class="node locked" id="ui-utente">
         <input type="checkbox" id="chk-utente" class="node-chk" disabled>
         <label for="chk-utente">Crea Utente</label>
-        <a href="user.md" class="node-link" title="Vai alla guida">↗</a>
+        <a href="../user/" class="node-link" title="Vai alla guida">↗</a>
       </div>
     </div>
   </div>
@@ -1602,7 +1603,7 @@
       <div class="node locked" id="ui-classe">
         <input type="checkbox" id="chk-classe" class="node-chk" disabled>
         <label for="chk-classe">Assegna a Classe/Corso</label>
-        <a href="class.md" class="node-link" title="Vai alla guida">↗</a>
+        <a href="../class/" class="node-link" title="Vai alla guida">↗</a>
       </div>
     </div>
   </div>
@@ -1614,9 +1615,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const dependencies = {
     "chk-raccolta": [],
     "chk-ruolo": [],
+    "chk-classe": [] 
     "chk-attivita": ["chk-raccolta"], 
     "chk-utente": ["chk-attivita", "chk-ruolo"], 
-    "chk-classe": ["chk-utente"] 
+
   };
 
   const nodeIds = Object.keys(dependencies);

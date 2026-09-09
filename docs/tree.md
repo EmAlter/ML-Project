@@ -151,7 +151,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const dependencies = {
     "chk-raccolta": [],
     "chk-ruolo": [],
-    "chk-classe": [] 
+    "chk-classe": [],
     "chk-attivita": ["chk-raccolta"], 
     "chk-utente": ["chk-attivita", "chk-ruolo"], 
     
