@@ -34,9 +34,6 @@ In Moodle non esiste un concetto di Sperimentazione, l'elemento che più si avvi
 Come definito precedentemente nel progetto concettuale, una Sperimentazione dovrebbe poter essere anonima oppure no, purtroppo in Moodle non è possible definire un Corso come anonimo.
 
 ### Creare una nuova sperimentazione
-Per creare una nuova sperimentazione, il meccanismo è molto semplice, il progettista:material-account-hard-hat: deve seguire questi passi:
+I passi da seguire per creare una nuova sperimentazione sono:
 
 - Accede alla Home di Moodle e clicca sul pulsante **Aggiungi corso** (oppure clicca sul pulsante **I miei corsi** del menù e poi su **Crea corso**)
-
-
-**DEFINIRE COSA è MEGLIO: SPERIMENTAZIONE = CORSO OPPURE SPERIMENTAZIONE = CATEGORIA**
