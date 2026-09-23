@@ -3,7 +3,7 @@ name: Deploy MkDocs su GitHub Pages
 on:
   push:
     branches:
-      - main # Cambia in 'master' se il tuo branch principale si chiama così
+      - main
 
 permissions:
   contents: write
@@ -16,5 +16,5 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: 3.x
-      - run: pip install mkdocs-material mkdocs-callouts
+      - run: pip install mkdocs-material mkdocs-callouts mkdocs-network-graph-plugin
       - run: mkdocs gh-deploy --force
