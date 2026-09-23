@@ -1,0 +1,37 @@
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    if (document.querySelector('#page-mod-quiz-attempt')) {
+        const container = document.querySelector('#responseform > div');
+        const description = document.querySelector('.que.description');
+        const otherQuestions = document.querySelectorAll('.que:not(.description)');
+        const submitNav = document.querySelector('.submitbtns');
+
+        if (container && description && otherQuestions.length > 0) {
+            // 1. Crea il wrapper orizzontale per le due colonne
+            const columnsWrapper = document.createElement('div');
+            columnsWrapper.className = 'quiz-columns-wrapper';
+
+            const leftColumn = document.createElement('div');
+            leftColumn.className = 'quiz-left-pane';
+            
+            const rightColumn = document.createElement('div');
+            rightColumn.className = 'quiz-right-pane';
+
+            // 2. Assembla l'albero del DOM
+            container.insertBefore(columnsWrapper, description);
+            columnsWrapper.appendChild(leftColumn);
+            columnsWrapper.appendChild(rightColumn);
+
+            // 3. Popola le colonne
+            leftColumn.appendChild(description);
+            otherQuestions.forEach(q => rightColumn.appendChild(q));
+            
+            // 4. Mantiene i pulsanti nel container principale (sotto il wrapper)
+            if (submitNav) {
+                container.appendChild(submitNav);
+                submitNav.classList.add('quiz-fixed-submit');
+            }
+        }
+    }
+});
+</script>
