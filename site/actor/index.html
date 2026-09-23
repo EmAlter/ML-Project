@@ -49,6 +49,8 @@
       
     
     
+      <link rel="stylesheet" href="../assets/stylesheets/interactive_graph.css">
+    
       <link rel="stylesheet" href="../stylesheets/extra.css">
     
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
@@ -1027,6 +1029,62 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../test_document/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documento di Test
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intervention/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Intervento
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1544,7 +1602,11 @@
 </ul>
 <h2 id="differenza-tra-utente-ruolo-e-attore">Differenza tra utente, ruolo e attore</h2>
 <p>Un <strong>utente</strong> rappresenta l'identità digitale (l'account) che accede e interagisce materialmente con il sistema, mentre un <strong>ruolo</strong> definisce l'insieme di permessi, competenze e limiti operativi associati a quell'utente.</p>
-<p>Un <strong>attore</strong> è invece un'astrazione concettuale, utilizzata nella fase di analisi e progettazione dello Unified Process, per mappare le interazioni esterne con i casi d'uso e stabilire "chi fa cosa". Non esiste come entità a sé stante nell'applicativo, ma prende vita nel momento in cui una persona fisica viene dotata delle autorizzazioni necessarie per operare.</p>
+<p>Un <strong>attore</strong> è invece un'astrazione concettuale, utilizzata nella fase di analisi e progettazione dello
+<span class="term"><strong>Unified Process (UP)</strong> <span class="tip"><strong>Unified Process</strong><br>
+Lo Unified Process è una metodologia di sviluppo software di tipo iterativo e incrementale, guidato dai casi d'uso (use-case driven) e incentrato sull'architettura.<br>
+</span> </span>, 
+per mappare le interazioni esterne con i casi d'uso e stabilire "chi fa cosa". Non esiste come entità a sé stante nell'applicativo, ma prende vita nel momento in cui una persona fisica viene dotata delle autorizzazioni necessarie per operare.</p>
 <p>Nel contesto del progetto (come formalizzato nel modello di dominio), è obbligatorio che ogni utente sia associato a un ruolo. Di conseguenza, al momento della creazione di un nuovo profilo in Moodle, sarà vincolante assegnargli una qualifica specifica (Progettista, Moderatore, Esperto o Testato). Questa assegnazione traduce nella pratica l'attore teorico definito in fase di analisi.</p>
 <p>Per semplicità possiamo dire che:<br>
 <a href="../user/">Utente</a> + <a href="../role/">Ruolo</a> = Attore</p>
@@ -1607,6 +1669,12 @@
     
     
       <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="https://fastly.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+      
+        <script src="https://fastly.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+      
+        <script src="../assets/javascripts/interactive_graph.js"></script>
       
     
   </body>

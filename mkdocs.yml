@@ -1,4 +1,5 @@
 site_name: Progetto Machine Learning
+site_url:
 repo_url: https://github.com/EmAlter/ML-Project
 repo_name: emalter/ML-Project
 nav:
@@ -18,6 +19,8 @@ nav:
       - Sperimentazione: experiment.md
       - Corso: course.md
       - Test: test.md
+      - Documento di Test: test_document.md
+      - Intervento: intervention.md
     - Gestire le Attività:
       - Attività: activity.md
       - Raccolta di Attività: activity_collection.md
@@ -33,6 +36,9 @@ nav:
 plugins:
   - search
   - callouts
+  - graph:
+      name: "title"
+
 markdown_extensions:
   - abbr
   - admonition

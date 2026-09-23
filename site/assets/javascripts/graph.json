@@ -1,0 +1,125 @@
+{
+  "nodes": [
+    {
+      "id": "0",
+      "name": "Home",
+      "symbolSize": 0,
+      "value": null
+    },
+    {
+      "id": "1",
+      "name": "Tesi",
+      "symbolSize": 0,
+      "value": null
+    },
+    {
+      "id": "2",
+      "name": "Codice iniettato e Plugins",
+      "symbolSize": 0,
+      "value": null
+    },
+    {
+      "id": "3",
+      "name": "Tablet",
+      "symbolSize": 0,
+      "value": null
+    },
+    {
+      "id": "4",
+      "name": "File CSV",
+      "symbolSize": 0,
+      "value": null
+    },
+    {
+      "id": "5",
+      "name": "Mapping dei Nomi",
+      "symbolSize": 0,
+      "value": null
+    },
+    {
+      "id": "6",
+      "name": "Attore",
+      "symbolSize": 0,
+      "value": null
+    },
+    {
+      "id": "7",
+      "name": "Diagramma Interattivo",
+      "symbolSize": 0,
+      "value": null
+    },
+    {
+      "id": "8",
+      "name": "Sperimentazione",
+      "symbolSize": 0,
+      "value": null
+    },
+    {
+      "id": "9",
+      "name": "Corso",
+      "symbolSize": 0,
+      "value": null
+    },
+    {
+      "id": "10",
+      "name": "Test",
+      "symbolSize": 0,
+      "value": null
+    },
+    {
+      "id": "11",
+      "name": "Documento di Test",
+      "symbolSize": 0,
+      "value": null
+    },
+    {
+      "id": "12",
+      "name": "Intervento",
+      "symbolSize": 0,
+      "value": null
+    },
+    {
+      "id": "13",
+      "name": "Attivit\u00e0",
+      "symbolSize": 0,
+      "value": null
+    },
+    {
+      "id": "14",
+      "name": "Raccolta di Attivit\u00e0",
+      "symbolSize": 0,
+      "value": null
+    },
+    {
+      "id": "15",
+      "name": "Domande e Risposte",
+      "symbolSize": 0,
+      "value": null
+    },
+    {
+      "id": "16",
+      "name": "Ruolo",
+      "symbolSize": 0,
+      "value": null
+    },
+    {
+      "id": "17",
+      "name": "Utente",
+      "symbolSize": 0,
+      "value": null
+    },
+    {
+      "id": "18",
+      "name": "Classe",
+      "symbolSize": 0,
+      "value": null
+    },
+    {
+      "id": "19",
+      "name": "Albero",
+      "symbolSize": 0,
+      "value": null
+    }
+  ],
+  "links": []
+}

@@ -3,13 +3,32 @@
     * **Visualizza:** :material-account-hard-hat: Progettista, :material-shield-account: Moderatore, :material-account: Testato
 
 Nel progetto concettuale un test è lo strumento attraverso il quale vengono somministrate le attività ai testati per poter, successivamente, raccogliere le risposte.<br>
-Un test è costituito da una o più [attività](activity.md) e appartiene a un [corso](course.md)
+Un test è costituito da una o più [attività](activity.md), appartiene a un [corso](course.md) e produce una [valutazione](evaluation.md) per ogni testato che lo completa.
+
+<p align="center">
+  <img src="../assets/images/test.svg" alt="Test">
+</p>
+
+Nel modello di dominio, un test è una classe generale che si specializza in diverse sottoclassi, ognuna delle quali rappresenta un diverso tipo di test:
+
+* **Test di tipo Machine Learning (ML)** :material-arrow-right-thin: rappresenta un test che contiene attività di tipo Machine Learning (es. Zombus, Frankie)
+* **Test di tipo Attribution of Mental States (AMS)** :material-arrow-right-thin: rappresenta un test utilizzato per valutare in che modo un testato percepisce e attribuisce stati mentali a un computer
+* **Test di tipo Abilità e Motivazione allo Studio (AMOS)** :material-arrow-right-thin: rappresenta un test utilizzato per valutare quanto un testato apprende, soprattutto in ambito scolastico, ed è motivato nello studio
+
+> [!INFORMAZIONI-AGGIUNTIVE] Informazioni aggiuntive
+> Le sottoclassi di test che sono state identificate durante la progettazione concettuale, sono state definite in base alle esigenze del progetto. È possibile, in futuro, aggiungere nuove tipologie di test senza dover modificare la struttura del modello di dominio, in quanto il concetto di test è generico e può essere esteso.
+
+A ogni test è associato un [documento di test](test_document.md) che contiene la descrizione di tutte le attività che lo compongono, le istruzioni per il testato ed eventuali informazioni aggiuntive per il Moderatore:material-shield-account: che lo gestisce.
+
 
 ## Moodle
 Durante lo studio del progetto, sono state fatte diverse prove per capire come rappresentare al meglio un test.
-In Moodle, ci si è focalizzati soprattutto sul <span class="term">**modulo** <span class="tip"><strong>Modulo</strong><br>
+In Moodle, ci si è focalizzati soprattutto sul 
+<span class="term">**modulo** <span class="tip"><strong>Modulo</strong><br>
 In Moodle, un modulo è un blocco funzionale che serve ad aggiungere contenuti, risorse o attività didattiche all'interno di un corso (sperimentazione)<br>
-</span> </span> [**Quiz**](<https://docs.moodle.org/35/it/Guida_rapida_Quiz>), perchè permette una discreta libertà di configurazione offrendo diverse tipologie di attività tra cui scegliere.
+</span> </span> 
+[**Quiz**](<https://docs.moodle.org/35/it/Guida_rapida_Quiz>), 
+perchè permette una discreta libertà di configurazione offrendo diverse tipologie di attività tra cui scegliere.
 
 ### Creare un nuovo test
 Per creare un nuovo test è importante che il Progettista:material-account-hard-hat: sia all'interno di una [sperimentazione](experiment.md) e che esista il [corso](course.md) in cui si vuole creare il test.

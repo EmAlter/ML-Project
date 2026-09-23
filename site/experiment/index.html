@@ -49,6 +49,8 @@
       
     
     
+      <link rel="stylesheet" href="../assets/stylesheets/interactive_graph.css">
+    
       <link rel="stylesheet" href="../stylesheets/extra.css">
     
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
@@ -973,10 +975,54 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#creare-una-nuova-categoria-di-corso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creare una nuova categoria di corso
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eliminare-una-categoria-di-corso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eliminare una categoria di corso
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#creare-una-nuova-sperimentazione" class="md-nav__link">
     <span class="md-ellipsis">
       
         Creare una nuova sperimentazione
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modificare-una-sperimentazione" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modificare una sperimentazione
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eliminare-una-sperimentazione" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eliminare una sperimentazione
       
     </span>
   </a>
@@ -1040,6 +1086,62 @@
     
   
     Test
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../test_document/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documento di Test
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intervention/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Intervento
   
 
     
@@ -1532,10 +1634,54 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#creare-una-nuova-categoria-di-corso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creare una nuova categoria di corso
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eliminare-una-categoria-di-corso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eliminare una categoria di corso
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#creare-una-nuova-sperimentazione" class="md-nav__link">
     <span class="md-ellipsis">
       
         Creare una nuova sperimentazione
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modificare-una-sperimentazione" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modificare una sperimentazione
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eliminare-una-sperimentazione" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eliminare una sperimentazione
       
     </span>
   </a>
@@ -1679,13 +1825,134 @@ In UML è una relazione strutturale di tipo "peer-to-peer", in cui le classi coi
 <p class="admonition-title">Attenzione</p>
 <p>Il <strong>Corso</strong> di Moodle non è equivalente al <strong>Corso</strong> del progetto concettuale!</p>
 </div>
-<p>Come definito precedentemente nel progetto concettuale, una Sperimentazione dovrebbe poter essere anonima oppure no, purtroppo in Moodle non è possible definire un Corso come anonimo.</p>
-<h3 id="creare-una-nuova-sperimentazione">Creare una nuova sperimentazione</h3>
-<p>Per creare una nuova sperimentazione, il meccanismo è molto semplice, il progettista<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 15c-4.42 0-8 1.79-8 4v2h16v-2c0-2.21-3.58-4-8-4M8 9a4 4 0 0 0 4 4 4 4 0 0 0 4-4m-4.5-7c-.3 0-.5.21-.5.5v3h-1V3s-2.25.86-2.25 3.75c0 0-.75.14-.75 1.25h10c-.05-1.11-.75-1.25-.75-1.25C16.25 3.86 14 3 14 3v2.5h-1v-3c0-.29-.19-.5-.5-.5z"/></svg></span> deve seguire questi passi:</p>
+<p>Come definito precedentemente nel progetto concettuale, una sperimentazione dovrebbe poter essere anonima oppure no, purtroppo in Moodle non è possible definire un corso come anonimo.</p>
+<h3 id="creare-una-nuova-categoria-di-corso">Creare una nuova categoria di corso</h3>
+<p>Prima di poter creare una nuova sperimentazione, è importante definire un elemento che non è previsto nel progetto concettuale, ma che è necessario in Moodle, cioè la <strong>Categoria di corso</strong>. Essa serve a raggruppare più corsi, ma nel nostro caso potrà essere utilizzata soprattutto in due modi:</p>
 <ul>
-<li>Accede alla Home di Moodle e clicca sul pulsante <strong>Aggiungi corso</strong> (oppure clicca sul pulsante <strong>I miei corsi</strong> del menù e poi su <strong>Crea corso</strong>)</li>
+<li>Creando una categoria di corso "generale" nella quale inserire tutte le sperimentazioni, oppure</li>
+<li>Creando una categoria di corso che raggruppa le sperimentazioni in base a un criterio specifico (es. anno, tipologia di test, ecc.)</li>
 </ul>
-<p><strong>DEFINIRE COSA è MEGLIO: SPERIMENTAZIONE = CORSO OPPURE SPERIMENTAZIONE = CATEGORIA</strong></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Si possono anche creare sotto-categorie di corso innestate una dentro l'altra.</p>
+</div>
+<p>I passi da seguire per creare una nuova categoria di corso sono:</p>
+<ol>
+<li>Accedere a <strong>I miei corsi</strong> nel menù centrale</li>
+<li>In alto a destra cliccare sul pulsante <strong>Gestisci corsi</strong>, apparirà la lista delle categorie di corso e delle sperimentazioni contenute in esse</li>
+<li>
+<p>Cliccare sul pulsante <strong>Crea categoria</strong> e compilare i campi obbligatori:</p>
+<ul>
+<li><strong>Categoria di appartenenza</strong> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 16.94v-4H5.08l-.03-2.01H14V6.94l5 5Z"/></svg></span> rappresenta la categoria di corso alla quale apparterrà la nuova categoria di corso</li>
+<li><strong>Nome categoria</strong> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 16.94v-4H5.08l-.03-2.01H14V6.94l5 5Z"/></svg></span> rappresenta il nome della nuova categoria di corso, che deve essere univoco all'interno del progetto</li>
+</ul>
+</li>
+<li>
+<p>Cliccare sul pulsante <strong>Crea categoria</strong> per salvare le impostazioni.</p>
+</li>
+</ol>
+<div class="admonition esempio">
+<p class="admonition-title">Esempio</p>
+<p>In questo esempio verrà creatà una possibile categoria di corso per raggruppare le sperimentazioni in base all'anno di creazione:</p>
+<ul>
+<li><strong>Categoria di appartenenza</strong> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 16.94v-4H5.08l-.03-2.01H14V6.94l5 5Z"/></svg></span> Primo Livello (per essere a livello di sistema)</li>
+<li><strong>Nome categoria</strong> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 16.94v-4H5.08l-.03-2.01H14V6.94l5 5Z"/></svg></span> Sperimentazioni 2026</li>
+</ul>
+</div>
+<h3 id="eliminare-una-categoria-di-corso">Eliminare una categoria di corso</h3>
+<p>I passi da seguire per eliminare una categoria di corso sono:</p>
+<ol>
+<li>Accedere a <strong>I miei corsi</strong> nel menù centrale</li>
+<li>In alto a destra cliccare sul pulsante <strong>Gestisci corsi</strong>, apparirà la lista delle categorie di corso e delle sperimentazioni contenute in esse</li>
+<li>Cliccare sul simbolo <strong><img src="../assets/icons/dots-vertical.svg" alt="Menù Verticale" width="20"></strong> a destra della categoria di corso che si vuole eliminare e cliccare su <strong><img src="../assets/icons/delete.svg" alt="Elimina" width="20"> Elimina</strong></li>
+<li>
+<p>Si aprirà una finestra di conferma nella quale sarà necessario compilare il campo <strong>Cosa fare</strong> che ha due opzioni:</p>
+<ul>
+<li>
+<p><strong>Sposta i corsi in un'altra categoria</strong> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 16.94v-4H5.08l-.03-2.01H14V6.94l5 5Z"/></svg></span> permette di spostare le sperimentazioni contenute nella categoria che si vuole eliminare in un'altra categoria di corso (in questo caso nel campo sottostanse scelto la categoria di corso nella quale si vogliono spostare le sperimentazioni)</p>
+<div class="admonition attenzione">
+<p class="admonition-title">Attenzione</p>
+<p>Se si sceglie questa opzione, deve esistere almeno un'altra categoria di corso nella quale spostare le sperimentazioni.</p>
+</div>
+</li>
+<li>
+<p><strong>Elimina tutto - non sarà possibile tornare indietro</strong> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 16.94v-4H5.08l-.03-2.01H14V6.94l5 5Z"/></svg></span> permette di eliminare la categoria di corso e tutte le sperimentazioni contenute in essa</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Cliccare sul pulsante <strong>Elimina</strong> per confermare l'eliminazione.</p>
+</li>
+</ol>
+<h3 id="creare-una-nuova-sperimentazione">Creare una nuova sperimentazione</h3>
+<p>I passi da seguire per creare una nuova sperimentazione sono:</p>
+<ol>
+<li>Accedere alla Home di Moodle</li>
+<li>In alto a destra cliccare sul pulsante <strong>Modalità modifica</strong>, appariranno diverse nuove "zone" modificabili all'interno della pagina</li>
+<li>
+<p>Cliccare sul pulsante <strong>Aggiungi corso</strong> e compilare i campi:</p>
+<div class="admonition attenzione">
+<p class="admonition-title">Attenzione</p>
+<p>In fase di creazione della sperimentazione, i campi che Moodle propone sono molti di più di quelli che verranno elencati qui sotto, tuttavia per il progetto concettuale bastano soltanto quelli descritti.<br>
+Gli altri campi possono essere lasciati (anche se obbligatori) con le impostazioni di default oppure adattarli ad eventuali eccezioni che il progettista ritiene necessarie per la sperimentazione stessa.</p>
+</div>
+<ul>
+<li><strong>Generale</strong><ul>
+<li><strong><code>Titolo del corso</code></strong> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 16.94v-4H5.08l-.03-2.01H14V6.94l5 5Z"/></svg></span> rappresenta il nome della sperimentazione</li>
+<li><strong><code>Titolo abbreviato</code></strong> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 16.94v-4H5.08l-.03-2.01H14V6.94l5 5Z"/></svg></span> rappresenta il nome breve della sperimentazione, che deve essere univoco all'interno del progetto</li>
+<li><strong><code>Categoria di corsi</code></strong> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 16.94v-4H5.08l-.03-2.01H14V6.94l5 5Z"/></svg></span> rappresenta la categoria di corso alla quale appartiene la sperimentazione</li>
+</ul>
+</li>
+<li><strong>Gruppi</strong><ul>
+<li><strong><code>Modalità gruppo</code></strong> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 16.94v-4H5.08l-.03-2.01H14V6.94l5 5Z"/></svg></span> rappresenta se la sperimentazione deve essere gestita in modalità gruppo o meno, ovvero se i testati devono essere divisi in gruppi oppure no</li>
+<li><strong><code>Forza modalità gruppo</code></strong> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 16.94v-4H5.08l-.03-2.01H14V6.94l5 5Z"/></svg></span> obbliga la divisione in gruppi per ogni modulo Moodle </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Cliccare sul pulsante <strong>Salva e visualizza</strong> per salvare le impostazioni della sperimentazione e passare alla pagina di visualizzazione della sperimentazione stessa.</p>
+</li>
+</ol>
+<div class="admonition esempio">
+<p class="admonition-title">Esempio</p>
+<p>In questo esempio, verrà mostrato come compilare i campi di un eventuale sperimentazione per rimanere in linea con le richieste del progetto concettuale:</p>
+<ul>
+<li><strong>Generale</strong><ul>
+<li><strong><code>Titolo del corso</code></strong> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 16.94v-4H5.08l-.03-2.01H14V6.94l5 5Z"/></svg></span> Sperimentazione n°9</li>
+<li><strong><code>Titolo abbreviato</code></strong> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 16.94v-4H5.08l-.03-2.01H14V6.94l5 5Z"/></svg></span> sperimentazione9</li>
+<li><strong><code>Categoria di corsi</code></strong> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 16.94v-4H5.08l-.03-2.01H14V6.94l5 5Z"/></svg></span> Sperimentazioni 2026</li>
+</ul>
+</li>
+<li><strong>Gruppi</strong><ul>
+<li><strong><code>Modalità gruppo</code></strong> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 16.94v-4H5.08l-.03-2.01H14V6.94l5 5Z"/></svg></span> Gruppi separati, ogni testato appartiene al gruppo assegnatogli e non può vedere i contenuti degli altri gruppi</li>
+<li>
+<p><strong><code>Forza modalità gruppo</code></strong> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 16.94v-4H5.08l-.03-2.01H14V6.94l5 5Z"/></svg></span></p>
+<ul>
+<li>No, se si prevede di creare, oltre ai test, moduli Moodle (es. Feedback) che saranno compilati da tutti indipendentemente dal gruppo di appartenenza</li>
+<li>Sì, se si prevede di mantenere la suddivisione in gruppi per qualsiasi altro modulo Moodle che verrà creato all'interno della sperimentazione</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h3 id="modificare-una-sperimentazione">Modificare una sperimentazione</h3>
+<p>I passi da seguire sono:</p>
+<ol>
+<li>Accedere a <strong>I miei corsi</strong> nel menù centrale e selezionare la sperimentazione che si vuole modificare</li>
+<li>Nel menù centrale cliccare su <strong>Impostazioni</strong> e modificare i campi che si vogliono cambiare</li>
+<li>Cliccare sul pulsante <strong>Salva e visualizza</strong> per salvare le modifiche effettuate.</li>
+</ol>
+<h3 id="eliminare-una-sperimentazione">Eliminare una sperimentazione</h3>
+<p>I passi da seguire sono:</p>
+<ol>
+<li>Accedere a <strong>I miei corsi</strong> nel menù centrale</li>
+<li>Cliccare sul pulsante <strong>Gestisci corsi</strong> in alto a destra</li>
+<li>Nella pagina che si aprirà, ci saranno due sezioni: a sinistra la lista delle categorie di corso e a sinistra la lista delle sperimentazioni contenute nella categoria selezionata.<br> 
+Cliccare la categoria alla quale appartiene la sperimentazione che si vuole eliminare e poi cliccare sul simbolo <strong><img src="../assets/icons/delete.svg" alt="Elimina" width="20"> Elimina</strong></li>
+<li>Confermare l'eliminazione della sperimentazione nella finestra di conferma cliccando su <strong>Elimina</strong>.</li>
+</ol>
 
 
 
@@ -1745,6 +2012,12 @@ In UML è una relazione strutturale di tipo "peer-to-peer", in cui le classi coi
     
     
       <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="https://fastly.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+      
+        <script src="https://fastly.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+      
+        <script src="../assets/javascripts/interactive_graph.js"></script>
       
     
   </body>
