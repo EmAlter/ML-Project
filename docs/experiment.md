@@ -23,6 +23,7 @@ In UML è una relazione strutturale di tipo "peer-to-peer", in cui le classi coi
 Ogni sperimentazione ha diversi attributi che la identificano:
 
 * **Nome** :material-arrow-right-thin: rappresenta il nome della sperimentazione, che deve essere univoco all'interno del progetto
+* **Descrizione** :material-arrow-right-thin: rappresenta la descrizione della sperimentazione, cioè il motivo per cui è stata creata e il suo obiettivo
 * **Anonimità** :material-arrow-right-thin: rappresenta se la sperimentazione è anonima o meno, ovvero se i dati raccolti saranno associati all'identità del testato o meno
 
 ## Moodle
@@ -91,6 +92,8 @@ I passi da seguire per creare una nuova sperimentazione sono:
         - **`Titolo del corso`** :material-arrow-right-thin: rappresenta il nome della sperimentazione
         - **`Titolo abbreviato`** :material-arrow-right-thin: rappresenta il nome breve della sperimentazione, che deve essere univoco all'interno del progetto
         - **`Categoria di corsi`** :material-arrow-right-thin: rappresenta la categoria di corso alla quale appartiene la sperimentazione
+    * **Descrizione**
+        - **`Introduzione al corso`** :material-arrow-right-thin: rappresenta la descrizione della sperimentazione, cioè il motivo per cui è stata creata e il suo obiettivo
     * **Gruppi**
         - **`Modalità gruppo`** :material-arrow-right-thin: rappresenta se la sperimentazione deve essere gestita in modalità gruppo o meno, ovvero se i testati devono essere divisi in gruppi oppure no
         - **`Forza modalità gruppo`** :material-arrow-right-thin: obbliga la divisione in gruppi per ogni modulo Moodle 
@@ -104,6 +107,8 @@ I passi da seguire per creare una nuova sperimentazione sono:
 >        - **`Titolo del corso`** :material-arrow-right-thin: Sperimentazione n°9
 >        - **`Titolo abbreviato`** :material-arrow-right-thin: sperimentazione9
 >        - **`Categoria di corsi`** :material-arrow-right-thin: Sperimentazioni 2026
+>    * **Descrizione**
+>        - **`Introduzione al corso`** :material-arrow-right-thin: La seguente sperimentazione ha come obiettivo quello di valutare l'efficacia di un intervento volto a migliorare la comprensione del Machine Learning da parte dei testati, in particolare per quanto riguarda il riconoscimento di modelli tipici e la valutazione di stili cognitivi.
 >    * **Gruppi**
 >        - **`Modalità gruppo`** :material-arrow-right-thin: Gruppi separati, ogni testato appartiene al gruppo assegnatogli e non può vedere i contenuti degli altri gruppi
 >        - **`Forza modalità gruppo`** :material-arrow-right-thin:
@@ -114,7 +119,7 @@ I passi da seguire per creare una nuova sperimentazione sono:
 ### Modificare una sperimentazione
 I passi da seguire sono:
 
-1. Accedere a **I miei corsi** nel menù centrale e selezionare la sperimentazione che si vuole modificare
+1. Accedere alla **Home** nel menù centrale e nella sezione **Corsi disponibili** selezionare la **Spermimentazione** che si vuole modificare
 1. Nel menù centrale cliccare su **Impostazioni** e modificare i campi che si vogliono cambiare
 1. Cliccare sul pulsante **Salva e visualizza** per salvare le modifiche effettuate.
 

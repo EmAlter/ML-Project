@@ -11,7 +11,7 @@ La Raccolta di Attività rappresenta il contenitore che contiene tutte le [attiv
 ## Moodle
 In Moodle la **Raccolta di Attività** è definita con il nome di **Deposito delle domande** ed è accessibile dalla Home del sito.
 
-Non c'è bisogno di creare un nuovo deposito delle domande, in quanto ne esiste già uno di default, che può essere utilizzato per inserire tutte le attività del progetto.
+Non c'è bisogno di creare un nuovo deposito delle domande, in quanto ne esiste già uno di sistema, che può essere utilizzato per inserire tutte le attività del progetto.
 
 ## Selezionare una Raccolta di Attività
 Per aprire una raccolta attività esistente, i passi sono:

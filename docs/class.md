@@ -8,11 +8,16 @@ Nel progetto concettuale una classe rappresenta l'insieme di utenti **Testati:ma
   <img src="../assets/images/class.svg" alt="Classe">
 </p>
 
-Una classe può agire come gruppo sperimentale (i cui dati sono validi per lo studio) o come gruppo di controllo (non sperimentale). Questo stato, tuttavia, è legato esclusivamente alla specifica sperimentazione a cui la classe partecipa, rendendolo di fatto una proprietà della relazione e non dell'entità Classe. Nel modello di dominio, questa dinamica è gestita tramite la Classe Associativa **AssegnazioneClasse**, progettata appositamente per definire la natura del vincolo tra la classe e la sperimentazione, perciò in fase di assegnazione di una classe a una sperimentazione, il **Progettista:material-account-hard-hat:** dovrà specificare se la classe è un gruppo sperimentale o di controllo.
+Una classe può agire come gruppo sperimentale (i cui dati sono validi per lo studio) o come gruppo di controllo (non sperimentale). Questo stato, tuttavia, è legato esclusivamente alla specifica sperimentazione a cui la classe partecipa, rendendolo di fatto una proprietà della relazione e non dell'entità Classe.<br> 
+Nel modello di dominio, questa dinamica è gestita tramite la
+<span class="term">**Classe Associativa** <span class="tip"><strong>Classe Associativa</strong><br>
+In UML è una classe collegata a una relazione di associazione per aggiungere attributi, operazioni o altre relazioni a quell'associazione specifica<br>
+</span> </span> 
+ **AssegnazioneClasse**, progettata appositamente per definire la natura del vincolo tra la classe e la sperimentazione, perciò in fase di assegnazione di una classe a una sperimentazione, il **Progettista:material-account-hard-hat:** dovrà specificare se la classe è un gruppo sperimentale o di controllo.
 
 ## Moodle
 In Moodle, il concetto di Classe è rappresentato dal **Gruppo globale**, che permette di raggruppare un insieme di utenti.<br>
-I gruppi globali, come dice il nome, sono visibili a livello di sistema e non sono legati a un corso Moodle specifico, permettendo, quindi, di essere assegnati a più corsi.
+I gruppi globali sono visibili a livello di sistema e non sono legati a un corso Moodle specifico, permettendo, quindi, di essere assegnati a più corsi.
 
 ### Creare una nuova classe
 > [!TIP]

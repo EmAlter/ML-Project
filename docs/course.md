@@ -17,18 +17,18 @@ Nel modello di dominio, un corso è una classe generale che si specializza in di
 
 ## Moodle
 In Moodle, esiste il concetto di Corso, ma non si allinea perfettamente con quello del progetto concettuale (già assegnato alla [Sperimentazione](experiment.md)).<br>
-Il problema principale era identificare un oggetto/elemento di Moodle che permettesse di raggruppare più test (e interventi) pur rimanendo all'interno della stessa Sperimentazione. La soluzione è stata quella di utilizzare la **Sezione** di un Corso di Moodle. Il Progettista:material-account-hard-hat: per ogni corso che ha definito nel progetto, creerà una nuova sezione all'interno della Sperimentazione e all'interno di essa inserirà tutti i test (e interventi) che fanno parte del corso stesso.
+Il problema principale era identificare un oggetto/elemento di Moodle che permettesse di raggruppare più test (e interventi) pur rimanendo all'interno della stessa Sperimentazione. La soluzione è stata quella di utilizzare la **Sezione di un Corso** di Moodle. Il Progettista:material-account-hard-hat: per ogni corso che ha definito nel progetto, creerà una nuova sezione all'interno della Sperimentazione e in essa inserirà tutti i test (e interventi) che fanno parte del corso stesso.
 
 > [!ATTENZIONE]
-> Nelle sezioni successive verranno utilizzati i termini del progetto concettuale, quindi il termine **Corso** indicherà una **Sezione** di un Corso di Moodle e il termine **Sperimentazione** indicherà un **Corso** di Moodle.<br>
-> In ogni caso, per evitare confusione, visualizzare la tabella di corrispondenza tra i termini del progetto concettuale e quelli di Moodle nella sezione [Mapping](mapping.md).
+> Nelle sezioni successive verranno utilizzati i termini del progetto concettuale, quindi il termine **Corso** indicherà una **Sezione di un Corso** di Moodle e il termine **Sperimentazione** indicherà un **Corso** di Moodle.<br>
+> In ogni caso, per evitare confusione, visualizzare la tabella di corrispondenza tra i termini del progetto concettuale e quelli di Moodle nella pagina [Mapping](mapping.md).
 
 ### Definire un nuovo corso
 Per definire un nuovo corso è importante che il Progettista:material-account-hard-hat: sia all'interno di una [Sperimentazione](experiment.md) esistente.
 
 I passi da seguire sono:
 
-1. Accedere a **I miei corsi** nel menù centrale e selezionare la **Spermimentazione** nella quale si vuole creare il nuovo corso
+1. Accedere alla **Home** nel menù centrale e nella sezione **Corsi disponibili** selezionare la **Spermimentazione** nella quale si vuole creare il nuovo corso
 1. In alto a destra cliccare sul pulsante **Modalità modifica**, appariranno diverse nuove "zone" modificabili all'interno della pagina
 1. Cliccare in fondo alla pagina sul pulsante **Aggiungi sezione**
 1. A questo punto, cliccando sul simbolo della matita **<img src="../assets/icons/edit.svg" alt="Modifica" width="15">** a fianco al titolo del nuovo corso, sarà possibile modificarne il nome
@@ -54,5 +54,10 @@ I passi da seguire sono:
 
 ### Aggiungere e rimuovere test da un corso
 
-* Aggiungere: vedi la sezione [Aggiungere un test a un corso](test.md#aggiungere-un-test-a-un-corso)
-* Rimuovere: vedi la sezione [Rimuovere un test da un corso](test.md#rimuovere-un-test-da-un-corso)
+* Aggiungere: vedi la sezione [Creare un nuovo test](test.md#creare-un-nuovo-test)
+* Rimuovere: vedi la sezione [Eliminare un test](test.md#eliminare-un-test)
+
+### Aggiungere e rimuovere interventi da un corso
+
+* Aggiungere: vedi la sezione [Creare un nuovo intervento](intervention.md#creare-un-nuovo-intervento)
+* Rimuovere: vedi la sezione [Eliminare un intervento](intervention.md#eliminare-un-intervento)

@@ -5,15 +5,16 @@ Per comprendere meglio i riferimenti tra i concetti astratti del progetto svilup
     | Progetto | Moodle | 
     | ----------- | ----------- |
     | [Sperimentazione](experiment.md) | Corso |
-    | [Corso](course.md) | Sezione |
-    | [Test](test.md) | Test |
+    | [Corso](course.md) | Sezione di un Corso |
+    | [Test](test.md) | Modulo Test |
+    | [Intervento](intervention.md) | Modulo Test |
 
 === "Gestione delle Attività"
 
     | Progetto | Moodle | 
     | ----------- | ----------- |
     | [Raccolta di Attività](activity_collection.md) | Deposito delle domande |
-    | [Attività](activity.md) | Categoria |
+    | [Attività](activity.md) | Categoria del deposito delle domande |
     | [Domanda](questions_and_responses.md) | Domanda |
     | [Risposta](questions_and_responses.md) | Risposta |
 

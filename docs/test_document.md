@@ -8,7 +8,8 @@ Nel progetto concettuale, un documento di test è la versione descrittiva di un 
   <img src="../assets/images/test_document.svg" alt="Documento di Test">
 </p>
 
-Il documento di test fa riferimento a un unico test ed è vincolante, ovvero se il test viene modificato, anche il documento di test dovrà essere aggiornato.
+> [!IMPORTANTE]
+> Il documento di test fa riferimento a un unico test ed è vincolante, ovvero se il test viene modificato, anche il documento di test dovrà essere aggiornato.
 
 ## Moodle
 Per integrare al meglio il concetto di documento di test in Moodle, come elemento che aggiunge informazioni alle attività di a un test, le opzioni possibili sono tre:
@@ -19,11 +20,14 @@ Per integrare al meglio il concetto di documento di test in Moodle, come element
 In Moodle, un modulo è un blocco funzionale che serve ad aggiungere contenuti, risorse o attività didattiche all'interno di un corso (sperimentazione)<br>
 </span> </span>
 di tipo file, dove il progettista:material-account-hard-hat: può caricare un documento pre-compilato in formato PDF o Word contenente le informazioni aggiuntive;
-3. Aggiungere le informazioni direttamente all'interno del test, ma renderli visibili solo al moderatore:material-shield-account:.
+3. Aggiungere le informazioni direttamente all'interno del test, ma renderle visibili solo al moderatore:material-shield-account:.
 
 Sebbene le prime due opzioni (1. e 2.) siano valide, rischiano, però, di raddoppiare il lavoro del progettista:material-account-hard-hat: e di creare confusione, soprattutto, lavorando con molti test contemporaneamente.<br>
 La terza opzione (3.), invece, sebbene non rispecchi pienamente il concetto di documento di test, si integra perfettamente in Moodle rendendo più semplice l'inserimento (injection) di informazioni aggiuntive all'interno di un test e la loro visualizzazione da parte del moderatore:material-shield-account:.<br>
 Per questo motivo, **la terza opzione è stata scelta come soluzione**.
+
+> [!Importante]
+> Poichè il documento di test è iniettato all'interno del test, non è possibile definire il suo attributo **Nome** 
 
 ### Inserire informazioni aggiuntive in un test
 
