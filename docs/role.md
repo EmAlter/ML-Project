@@ -18,10 +18,13 @@ Il concetto di **ruolo** in Moodle è identico a quello del progetto astratto.
 > [!IMPORTANTE]
 > Il **Progettista** in Moodle è rappresentato dal ruolo di **Amministratore**, che viene generato e assegnato automaticamente al momento dell'installazione del sistema, quindi non è necessario creare un nuovo ruolo per esso.
 
+> [!TIP]
+> È possibile importare i ruoli già preimpostati degli attori definiti nel progetto concettuale tramite file XML, in modo da non doverli creare manualmente (vedi [Scaricare i ruoli e importarli su Moodle](csv.md#scaricare-i-ruoli-e-importarli-su-moodle)).
+
 ### Creare un nuovo ruolo in Moodle
 Per creare un nuovo ruolo in Moodle è necessario rispettare alcune precondizioni:
 
-* Nel sistema devono esistere una serie di autorizzazioni assegnabili (in Moodle sono definite come **Permessi**), che rappresentano le azioni che un utente può compiere all'interno del sistema. Queste autorizzazioni sono già presenti in Moodle, quindi non è necessario crearne di nuove.
+* Nel sistema devono esistere una serie di autorizzazioni assegnabili ([permessi](permission.md)), che rappresentano le azioni che un utente può compiere all'interno del sistema. Queste autorizzazioni sono già presenti in Moodle, quindi non è necessario crearne di nuove.
 
 Di seguito i passi per creare un nuovo ruolo in Moodle:
 

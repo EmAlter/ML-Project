@@ -1,14 +1,19 @@
-# File CSV
+# File CSV e XML
 Per semplificare la gestione di alcune funzionalità, Moodle permette di operare anche tramite file
 <span class="term">**CSV** <span class="tip"><strong>File CSV</strong><br>
 Un file CSV (Comma-Separated Values) è un file di testo semplice usato per memorizzare dati in formato tabellare, dividendo ogni valore con un separatore (es. virgola, punto e virgola, ecc.).<br>
+</span> </span>
+e
+<span class="term">**XML** <span class="tip"><strong>File XML</strong><br>
+Un file XML (Extensible Markup Language) è un metalinguaggio di marcatura flessibile che consente di definire regole per strutturare, memorizzare e trasportare dati in un formato leggibile sia da utenti umani che da sistemi informatici.<br>
 </span> </span>.<br>
-Questo tipo di file permette di operare su più dati, permettendo di creare o modificare più istanze contemporanamente.
+Questi tipi di file permettono di operare su più dati, permettendo di creare o modificare più istanze contemporanamente.
 
 ## Introduzione
-In Moodle, il file verrà utilizzato per:
+In Moodle, i file possono essere utilizzati per:
 
 * Gestire le classi (vedi [Classe](class.md)) a livello di sistema.
+* Scaricare i ruoli (vedi [Ruolo](role.md)) e importarli su Moodle.
 * Creare o aggiornare più utenti contemporaneamente, definendo tutti i loro attributi, ruoli e classi di appartenenza in un'unica operazione.
 
 ## Creare più classi contemporaneamente
@@ -55,6 +60,28 @@ Riassumendo, le colonne sono:
 > name,idnumber,visible
 > Classe 3A,classe_3a,1
 > ```
+
+## Scaricare i ruoli e importarli su Moodle
+La seguente sezione permette di scaricare i ruoli, già preimpostati, degli attori definiti nel progetto concettuale e importarli su Moodle tramite file XML.
+
+[:material-download: Progettista](assets/files/progettista.xml){: .md-button .md-button--primary }
+[:material-download: Moderatore](assets/files/moderatore.xml){: .md-button .md-button--primary }
+[:material-download: Testato](assets/files/testato.xml){: .md-button .md-button--primary }
+
+[:material-download: Scarica il plugin](assets/files/tokenlogin.zip){: .md-button .md-button--primary }
+
+
+Una volta scaricati i file XML dei ruoli, i passi da seguire per importarli direttamente su Moodle sono:
+
+1. Accedere alla Home page di Moodle
+1. Cliccare su **Amministrazione del sito** nel menù centrale
+1. Nel menù orizzontale scegliere **Utenti > Autorizzazioni > Gestione Ruoli**
+1. Cliccare sul pulsante **Aggiungi un ruolo**
+1. Nella pagina che si apre importare il file XML del ruolo nel campo **Usa ruolo preimpostato** avendo cura che il campo **Usa ruolo o archetipo** sia impostato su **Nessun ruolo**
+1. Cliccare sul pulsante **Continua** e poi nella nuova pagina cliccare su **Crea quesro ruolo** per terminare l'importazione del ruolo.
+
+
+
 ## Creare o aggiornare più utenti contemporaneamente
 ### Impostare il file CSV
 Per prima cosa bisogna preparare un file CSV con i dati degli utenti da creare/aggiornare.<br>
@@ -107,9 +134,6 @@ Riassumendo, le colonne sono:
 > ```
 > > [!ATTENZIONE]
 > > Il campo `profile_field_datanascita`, essendo un campo di tipo Data e Ora, deve rispettare il formato `YYYY-MM-DD` (anno-mese-giorno), altrimenti Moodle non riuscirà a interpretarlo correttamente.
-
-
-
 
 ### Creare un nuovo utente o aggiornare quelli esistenti tramite CSV file
 > [!TIP]
