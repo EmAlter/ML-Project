@@ -1,0 +1,163 @@
+/* ==========================================================================
+   1. RESET E PULIZIA INTERFACCIA MOODLE
+   ========================================================================== */
+
+#page-mod-quiz-attempt #page-wrapper,
+#page-mod-quiz-attempt #page,
+#page-mod-quiz-attempt #region-main {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Aggiunti #page-navbar e .breadcrumb alla lista degli elementi da nascondere */
+#page-mod-quiz-attempt nav.navbar,
+#page-mod-quiz-attempt .activity-header,
+#page-mod-quiz-attempt .activity-navigation,
+#page-navbar,
+.breadcrumb,
+#page-footer,
+#page-mod-quiz-attempt .drawer-toggles,
+.quizinfo,
+#page-mod-quiz-attempt .que .info,
+input[name="previous"] {
+    display: none !important;
+}
+
+/* ==========================================================================
+   2. CONTENITORE PRINCIPALE (A Colonna)
+   ========================================================================== */
+#responseform {
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#responseform > div {
+    display: flex;
+    flex-direction: column; /* Impila il blocco colonne e il blocco pulsanti */
+    gap: 15px;
+    height: calc(100vh - 30px); 
+}
+
+/* Nuovo Wrapper che gestisce le due colonne orizzontali */
+.quiz-columns-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex: 1; /* Permette al wrapper di occupare tutto lo spazio disponibile in altezza */
+    min-height: 0; /* Regola fondamentale di Flexbox per impedire l'overflow fuori dal container padre */
+}
+
+/* ==========================================================================
+   3. PANNELLO SINISTRO E DESTRO
+   ========================================================================== */
+.quiz-left-pane {
+    flex: 0 0 55%;
+    height: 100%;
+    overflow-y: auto;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.quiz-left-pane .que.description {
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.quiz-right-pane {
+    flex: 1;
+    height: 100%;
+    overflow-y: auto;
+    padding: 10px; 
+    box-sizing: border-box;
+}
+
+/* ==========================================================================
+   BARRA PULSANTI FISSA IN BASSO
+   ========================================================================== */
+.quiz-fixed-submit {
+    flex: 0 0 auto; /* Impedisce alla barra di comprimersi */
+    display: flex;
+    justify-content: flex-end; /* Spinge il pulsante verso destra */
+    padding-right: 10px;
+}
+
+.quiz-fixed-submit .btn-secondary, 
+.quiz-fixed-submit .btn-primary, 
+.quiz-fixed-submit .mod_quiz-next-nav {
+    border-radius: 14px !important; 
+    padding: 12px 35px !important;
+    font-size: 1.05rem !important; 
+    min-height: 48px;
+    margin: 0 !important; /* Rimuove i margini pregressi */
+}
+
+/* ==========================================================================
+   5. STILE DELLE SINGOLE DOMANDE
+   ========================================================================== */
+
+.que .content { 
+    margin-left: 0 !important; 
+}
+
+.que:not(.description) {
+    background: #eaf4fb;
+    border-radius: 20px;
+    padding: 28px 32px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+}
+
+.qtext { 
+    font-size: 1.15rem; 
+    line-height: 1.6; 
+    margin-bottom: 18px; 
+}
+
+.answer .r0, .answer .r1 {
+    display: flex; 
+    align-items: center; 
+    gap: 10px;
+    padding: 12px 18px; 
+    margin: 6px 8px 6px 0;
+    border-radius: 999px; 
+    background: #ffffff;
+    border: 2px solid #dbe7f0; 
+    transition: all .15s ease;
+}
+
+.answer input[type="radio"] { 
+    width: 28px; 
+    height: 28px; 
+    accent-color: #4a90d9; 
+    margin: 0; 
+}
+
+.answer label { 
+    font-size: 1.05rem; 
+    cursor: pointer; 
+    margin-bottom: 0; 
+}
+
+.answer .r0:has(input:checked), 
+.answer .r1:has(input:checked) {
+    background: #dcecfb; 
+    border-color: #4a90d9; 
+    font-weight: 600;
+}
+
+/* Stile del pulsante "Avanti" situato a fine scorrimento */
+.btn-secondary, .btn-primary, .mod_quiz-next-nav {
+    border-radius: 14px !important; 
+    padding: 12px 28px !important;
+    font-size: 1.05rem !important; 
+    min-height: 48px;
+    display: block; 
+    margin-top: 20px;
+}
